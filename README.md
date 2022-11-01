@@ -2,7 +2,7 @@
 
 To run the server, run the following command:
 
-    $ cd server
+    $ cd UNO
     $ npm install
-    $ npm start
+    $ node ./bin/www
 
