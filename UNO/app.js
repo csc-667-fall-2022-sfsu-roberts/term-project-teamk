@@ -8,10 +8,11 @@ if(process.env.NODE_ENV === 'development') {
   require("dotenv").config();
 }
 
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
+const homeRouter = require('./routes/unauthenticated/index');
+const authenticationRouter = require('./routes/unauthenticated/authentication')
+const lobbyRouter = require('./routes/authenticated/lobby')
+const gamesRouter = require('./routes/authenticated/games')
 const testsRouter = require('./routes/tests');
-const gamePageRouter = require('./routes/gamepage')
 
 const app = express();
 
@@ -25,10 +26,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', homeRouter);
+app.use('/',authenticationRouter);
+app.use('/lobby',lobbyRouter);
+app.use('/games',gamesRouter);
+
+
 app.use("/tests", testsRouter);
-app.use('/gamepage',gamePageRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
