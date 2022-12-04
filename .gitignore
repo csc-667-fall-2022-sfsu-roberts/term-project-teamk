@@ -48,8 +48,3 @@ jspm_packages/
 # dotenv environment variable files
 # .env
 
-# Next.js build output
-.next
-
-#node
-node_modules/
