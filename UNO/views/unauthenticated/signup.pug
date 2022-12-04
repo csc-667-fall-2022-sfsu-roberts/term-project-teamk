@@ -3,3 +3,26 @@ extends layout
 block content
     h1 Singup Page 
     
+    form(action="#" method='POST')
+        
+        div.form-group
+            label Username
+            br
+            input(type='text' name='username' placeholder='Enter username here..')
+        
+        div.form-group
+            label Email
+            br
+            input(type='email' name='email' placeholder='Enter email here..')
+               
+        div.form-group
+            label Password
+            br
+            input(type='password' name='password' placeholder='Enter password here... ')
+        
+        div.form-group
+            label Re-Enter Password
+            br
+            input(type='password' name='password' placeholder='Re-enter password here... ')
+        
+        button.btn.btn-default(type='submit' name='signup') Sign Up
