@@ -2,7 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/:id',(req,res) => {
-    res.render('authenticated/games', {})
+    const { id } = req.params;
+
+    res.render('authenticated/games', { id })
 })
 
 module.exports = router;
