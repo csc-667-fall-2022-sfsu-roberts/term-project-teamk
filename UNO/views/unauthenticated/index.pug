@@ -1,6 +1,9 @@
 extends layout
 
 block content
-  h1= title
+ 
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
   p Welcome to #{title}
 
