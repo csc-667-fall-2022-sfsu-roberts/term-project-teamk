@@ -1,8 +1,6 @@
 .card-R0 {
 	position:absolute;
 	clip:rect(0px 170px 260px 0px);
-    /*left: 50px;
-    top: 20px;*/
 }
 
 .card-R1 {
@@ -260,7 +258,7 @@
 	clip:rect(840px 2570px 1100px 2400px)
 }
 
-card1{
+#card1{
     left: 0px;
     top: 0px;
 }
