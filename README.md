@@ -6,3 +6,6 @@ To run the server, run the following command:
     $ npm install
     $ node ./bin/www
 
+# Home Page
+
+![Home Page](Home.png)
