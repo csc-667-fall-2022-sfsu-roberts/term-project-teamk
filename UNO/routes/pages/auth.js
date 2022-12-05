@@ -19,7 +19,7 @@ router.get("/signup", (request, response)=>{
 
 router.post("/signup", (request, response)=>{
     const{ username, password}= request.body;
-
+    console.log({username, password});
     // response.json({username, password})
     request.session.authenticated=true;
     request.session.username=username;
