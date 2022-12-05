@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css')
+  body
+    ul 
+      li 
+        a(href="/") Home
+      li 
+        a(href="/signup") Singup
+      li 
+        a(href="/login") Login
+      li
+        a(href="/lobby") Lobby (authenticated) 
+      
+    block content
+
+    footer
+      p Copyright 2020

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1 Login Page
+    form(action="#" method='GET')
+        
+        div.form-group
+            label Username
+            br
+            input(type='text' name='username' placeholder='Enter username here..')
+        div.form-group
+            label Password
+            br
+            input(type='password' name='password' placeholder='Enter password here... ')
+        
+        button.btn.btn-default(type='submit' name='login') Login
