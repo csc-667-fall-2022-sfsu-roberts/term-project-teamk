@@ -11,7 +11,7 @@ router.post("/login", (request, response)=>{
     request.session.authenticated=true;
     request.session.username=username;
 
-    response.redirect("/");
+    response.redirect("/lobby");
 });
 router.get("/signup", (request, response)=>{
     response.render("public/signup");
@@ -19,12 +19,12 @@ router.get("/signup", (request, response)=>{
 
 router.post("/signup", (request, response)=>{
     const{ username, password}= request.body;
-
+    console.log({username, password});
     // response.json({username, password})
     request.session.authenticated=true;
     request.session.username=username;
 
-    response.redirect("/");
+    response.redirect("/lobby");
 });
 
 module.exports=router;
