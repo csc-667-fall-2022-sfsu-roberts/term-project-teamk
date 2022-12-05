@@ -1,0 +1,266 @@
+.card-R0 {
+	position:absolute;
+	clip:rect(0px 170px 260px 0px);
+    /*left: 50px;
+    top: 20px;*/
+}
+
+.card-R1 {
+	position:absolute;
+	clip:rect(0px 370px 260px 200px)
+}
+
+.card-R2 {
+	position:absolute;
+	clip:rect(0px 570px 260px 400px)
+}
+
+.card-R3 {
+	position:absolute;
+	clip:rect(0px 770px 260px 600px)
+}
+
+.card-R4 {
+	position:absolute;
+	clip:rect(0px 970px 260px 800px)
+}
+
+.card-R5 {
+	position:absolute;
+	clip:rect(0px 1170px 260px 1000px)
+}
+
+.card-R6 {
+	position:absolute;
+	clip:rect(0px 1370px 260px 1200px)
+}
+
+.card-R7 {
+	position:absolute;
+	clip:rect(0px 1570px 260px 1400px)
+}
+
+.card-R8 {
+	position:absolute;
+	clip:rect(0px 1770px 260px 1600px)
+}
+
+.card-R9 {
+	position:absolute;
+	clip:rect(0px 1970px 260px 1800px)
+}
+
+.card-R10 {
+	position:absolute;
+	clip:rect(0px 2170px 260px 2000px)
+}
+
+.card-R11 {
+	position:absolute;
+	clip:rect(0px 2370px 260px 2200px)
+}
+
+.card-R12 {
+	position:absolute;
+	clip:rect(0px 2570px 260px 2400px)
+}
+
+.card-B0 {
+	position:absolute;
+	clip:rect(280px 170px 540px 0px)
+}
+
+.card-B1 {
+	position:absolute;
+	clip:rect(280px 370px 540px 200px)
+}
+
+.card-B2 {
+	position:absolute;
+	clip:rect(280px 570px 540px 400px)
+}
+
+.card-B3 {
+	position:absolute;
+	clip:rect(280px 770px 540px 600px)
+}
+
+.card-B4 {
+	position:absolute;
+	clip:rect(280px 970px 540px 800px)
+}
+
+.card-B5 {
+	position:absolute;
+	clip:rect(280px 1170px 540px 1000px)
+}
+
+.card-B6 {
+	position:absolute;
+	clip:rect(280px 1370px 540px 1200px)
+}
+
+.card-B7 {
+	position:absolute;
+	clip:rect(280px 1570px 540px 1400px)
+}
+
+.card-B8 {
+	position:absolute;
+	clip:rect(280px 1770px 540px 1600px)
+}
+
+.card-B9 {
+	position:absolute;
+	clip:rect(280px 1970px 540px 1800px)
+}
+
+.card-B10 {
+	position:absolute;
+	clip:rect(280px 2170px 540px 2000px)
+}
+
+.card-B11 {
+	position:absolute;
+	clip:rect(280px 2370px 540px 2200px)
+}
+
+.card-B12 {
+	position:absolute;
+	clip:rect(280px 2570px 540px 2400px)
+}
+
+.card-Y0 {
+	position:absolute;
+	clip:rect(560px 170px 820px 0px)
+}
+
+.card-Y1 {
+	position:absolute;
+	clip:rect(560px 370px 820px 200px)
+}
+
+.card-Y2 {
+	position:absolute;
+	clip:rect(560px 570px 820px 400px)
+}
+
+.card-Y3 {
+	position:absolute;
+	clip:rect(560px 770px 820px 600px)
+}
+
+.card-Y4 {
+	position:absolute;
+	clip:rect(560px 970px 820px 800px)
+}
+
+.card-Y5 {
+	position:absolute;
+	clip:rect(560px 1170px 820px 1000px)
+}
+
+.card-Y6 {
+	position:absolute;
+	clip:rect(560px 1370px 820px 1200px)
+}
+
+.card-Y7 {
+	position:absolute;
+	clip:rect(560px 1570px 820px 1400px)
+}
+
+.card-Y8 {
+	position:absolute;
+	clip:rect(560px 1770px 820px 1600px)
+}
+
+.card-Y9 {
+	position:absolute;
+	clip:rect(560px 1970px 820px 1800px)
+}
+
+.card-Y10 {
+	position:absolute;
+	clip:rect(560px 2170px 820px 2000px)
+}
+
+.card-Y11 {
+	position:absolute;
+	clip:rect(560px 2370px 820px 2200px)
+}
+
+.card-Y12 {
+	position:absolute;
+	clip:rect(560px 2570px 820px 2400px)
+}
+
+.card-G0 {
+	position:absolute;
+	clip:rect(840px 170px 1100px 0px)
+}
+
+.card-G1 {
+	position:absolute;
+	clip:rect(840px 370px 1100px 200px)
+}
+
+.card-G2 {
+	position:absolute;
+	clip:rect(840px 570px 1100px 400px)
+}
+
+.card-G3 {
+	position:absolute;
+	clip:rect(840px 770px 1100px 600px)
+}
+
+.card-G4 {
+	position:absolute;
+	clip:rect(840px 970px 1100px 800px)
+}
+
+.card-G5 {
+	position:absolute;
+	clip:rect(840px 1170px 1100px 1000px)
+}
+
+.card-G6 {
+	position:absolute;
+	clip:rect(840px 1370px 1100px 1200px)
+}
+
+.card-G7 {
+	position:absolute;
+	clip:rect(840px 1570px 1100px 1400px)
+}
+
+.card-G8 {
+	position:absolute;
+	clip:rect(840px 1770px 1100px 1600px)
+}
+
+.card-G9 {
+	position:absolute;
+	clip:rect(840px 1970px 1100px 1800px)
+}
+
+.card-G10 {
+	position:absolute;
+	clip:rect(840px 2170px 1100px 2000px)
+}
+
+.card-G11 {
+	position:absolute;
+	clip:rect(840px 2370px 1100px 2200px)
+}
+
+.card-G12 {
+	position:absolute;
+	clip:rect(840px 2570px 1100px 2400px)
+}
+
+card1{
+    left: 0px;
+    top: 0px;
+}

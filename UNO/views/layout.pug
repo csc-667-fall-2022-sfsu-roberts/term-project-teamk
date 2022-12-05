@@ -3,15 +3,9 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/navbar.css')
+    link(rel='stylesheet', href='/stylesheets/card.css')
   body
-    ul 
-      li 
-        a(href="/") Home
-      li 
-        a(href="/signup") Singup
-      li 
-        a(href="/login") Login
-      li
-        a(href="/lobbby") Lobby (authenticated) 
+    include navbar.pug
       
 block content
