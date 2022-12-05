@@ -8,6 +8,10 @@
     align-items: center;
     gap: 16px;
 
+    left: 0px;
+    top: 0px;
+    position: absolute;
+
     background-color: #1f1f1f;
     color: #ffffff;
 }
