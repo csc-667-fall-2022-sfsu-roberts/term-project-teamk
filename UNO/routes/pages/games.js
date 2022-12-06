@@ -1,6 +1,5 @@
-const { response } = require("express");
 const express =require("express");
-const protect =require("../../app-config/protect");
+
 const router =express.Router();
 
 router.get("/:id",(request, response)=>{

@@ -4,11 +4,9 @@ const router =express.Router();
 
 
 router.get("/",(request, response) =>{
-    const {sessionID} = request;
-    const { username } = request.session;
+    const { username, userId } = request.session;
 
-    console.log({username});
-    response.render("public/lobby", { username, sessionID });
+    response.render("public/lobby", { username, userId });
 });
 
 module.exports =router;

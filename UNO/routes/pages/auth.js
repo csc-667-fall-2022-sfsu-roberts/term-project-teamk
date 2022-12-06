@@ -1,3 +1,5 @@
+const { request, response } = require("express");
+const Users = require("../../db/users");
 const express =require("express");
 const router =express.Router();
 
@@ -17,14 +19,23 @@ router.get("/signup", (request, response)=>{
     response.render("public/signup");
 });
 
-router.post("/signup", (request, response)=>{
-    const{ username, password}= request.body;
-    console.log({username, password});
-    // response.json({username, password})
-    request.session.authenticated=true;
-    request.session.username=username;
+    
 
-    response.redirect("/lobby");
+router.post("/signup", (request, response)=>{
+    const{ username, email, password}= request.body;
+
+    Users.signUp({username, email, password})
+    .then(({id, username})=>{
+        
+        request.session.authenticated=true;
+        request.session.userId= id;
+        request.session.username= username;
+
+        response.redirect("/lobby");
+    })
+    .catch(error=>{
+        response.redirect("/auth/signup");
+    });
 });
 
 module.exports=router;
