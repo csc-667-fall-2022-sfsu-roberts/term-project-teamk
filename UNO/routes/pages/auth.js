@@ -5,15 +5,23 @@ const router =express.Router();
 
 router.get('/login',(request, response)=> {
     response.render("public/login");
+
 });
 router.post("/login", (request, response)=>{
     const{ username, password}= request.body;
 
-    // response.json({username, password})
-    request.session.authenticated=true;
-    request.session.username=username;
+    Users.login({username,password})
+    .then(({id})=>{
+        
+        request.session.authenticated=true;
+        request.session.userId= id;
+        request.session.username= username;
 
-    response.redirect("/lobby");
+        response.redirect("/lobby");
+    })
+    .catch(error=>{
+        response.redirect("/auth/login");
+    });
 });
 router.get("/signup", (request, response)=>{
     response.render("public/signup");
