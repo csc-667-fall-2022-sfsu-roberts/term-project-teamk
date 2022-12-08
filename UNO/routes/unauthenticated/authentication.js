@@ -1,17 +1,30 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
+router.get('/login',(request, response)=> {
+    response.render("unauthenticated/login");
+});
+router.post("/login", (request, response)=>{
+    const{ username, password}= request.body;
 
-router.get('/signup', (req,res,next) =>  {
-  res.render('unauthenticated/signup', {});
+    // response.json({username, password})
+    request.session.authenticated=true;
+    request.session.username=username;
+
+    response.redirect("/lobby");
+});
+router.get("/signup", (request, response)=>{
+    response.render("unauthenticated/signup");
 });
 
+router.post("/signup", (request, response)=>{
+    const{ username, password}= request.body;
+    console.log({username, password});
+    // response.json({username, password})
+    request.session.authenticated=true;
+    request.session.username=username;
 
-router.get('/login', (req,res,next) =>  {
-    res.render('unauthenticated/login', {});
+    response.redirect("/lobby");
 });
-  
-  
-
 
 module.exports = router;

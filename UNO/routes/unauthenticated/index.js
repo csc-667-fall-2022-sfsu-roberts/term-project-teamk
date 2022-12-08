@@ -1,11 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-
-router.get('/', (req,res,next) =>  {
-  res.render('unauthenticated/index', {title: 'hello'});
+/* GET home page. */
+router.get('/', (request, response) =>{
+  const {sessionID} = request;
+  const{ username } = request.session;
+  console.log({username});
+  response.render("unauthenticated/index", { username, sessionID });
 });
-
-
 
 module.exports = router;
