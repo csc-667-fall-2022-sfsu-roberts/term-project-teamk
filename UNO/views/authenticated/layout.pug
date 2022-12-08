@@ -41,8 +41,9 @@ html
     link(rel='stylesheet', href='/stylesheets/chat.css')
     link(rel='stylesheet', href='/stylesheets/index.css')
   body
-    include navbar
-            
+
+    include ../unauthenticated/navbar
+    
     block content
 
     //- Must include bootstrap js before the body end because it complains.
