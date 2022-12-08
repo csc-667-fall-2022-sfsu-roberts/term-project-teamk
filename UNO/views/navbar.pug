@@ -1,9 +1,21 @@
-.navbar
-      .navbar-logo
-        a(href="/") Home
-      .navbar-grow
-      |     
-      .navbar-menu
-        a(class="navbar-menu-item" href='/login') Login
-        a(class="navbar-menu-item" href='/signup') Sign up
-        a(class="navbar-menu-item" href="/lobby") Lobby (authenticated) 
+nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+      div.container-fluid
+        a.navbar-brand(href="/" type="button") uno
+        if user
+          script(src="/javascripts/logout.js" defer)
+          ul.navbar-nav.mr-auto
+            li.nav-item.dropdown 
+              a.nav-link.dropdown-toggle(href="#", type="button", id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false")=user.username
+              ul.dropdown-menu(aria-labelledby="userDropdown")
+                li.nav-item
+                  a.dropdown-item(id="logout-btn" type="button") Logout
+        else
+          ul.navbar-nav.mr-auto
+            li.nav-item
+              a.nav-link(href="/login", type="button") Login
+            li.nav-item
+              a.nav-link(href="/signup", type="button") Register
+            //-li.nav-item
+            //-  a.nav-link(href="/", type="button") Home
+            li.nav-item
+              a.nav-link(href="/lobby", type="button") Lobby (authenticated)
