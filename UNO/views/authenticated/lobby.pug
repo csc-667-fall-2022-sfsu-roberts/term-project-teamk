@@ -1,4 +1,4 @@
-extends layout 
+extends ..\layout
 
 block content
     // Import game_room.css
@@ -19,7 +19,6 @@ block content
                   //- Lobby Status Section
                   .col-sm-12.col-md-9 
 
-
                     .card.bg-dark.text-white 
                       .card-body
                         h4.card-title Game Lobby 
@@ -32,7 +31,7 @@ block content
                         .row(id="connected-players")
 
                   //- Game Chat Section
-                  .col-sm-12.col-md-3
+                  .col-sm-12.col-md-3(id="chatroom")
                     .card.bg-dark.text-white 
                       .card-body
                         .chatroom-title-container
