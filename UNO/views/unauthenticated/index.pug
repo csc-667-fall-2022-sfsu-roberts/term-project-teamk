@@ -1,36 +1,39 @@
-extends ..\layout
+extends layout
 
 block content
 
     head 
         title= title 
 
-    .maindiv
-        .main-title Dashboard 
     
-    .button-container
-            .button-container-buttons(id="createGame")
-                .create-game-btn.btn.bg-success(id="new-game-btn") Create Game 
-            .button-container-buttons(id="joinGame")
-                .join-game-btn.btn.bg-success(id="new-game-btn") Join Game 
-            .button-container-buttons(id="enterGameId")
-                input(id="roomId", name="roomId" value="lobby")
+    input(type="hidden", id="roomId", name="roomId" value="lobby")
 
-    .col-sm-12.col-md-3(id="GlobalChat")
+    .maindiv
+        .button-container
+            .main-title Dashboard 
+            .create-game-btn.btn.bg-success(id="new-game-btn") Create Game 
+
+        .line.mb-3
+
+        .row 
+            //- Active Games Section
+            .col-sm-12.col-md-9
+                .alert.alert-danger(role="alert" id="no-active-games-alert" hidden) No active games found, click "Create Game" to start a new one.
+                .row.row-cols-1.row-cols-md-4.g-2(id="active-games")
+
+            //- Dashboard Chat Section
+            .col-sm-12.col-md-3
                 .card.bg-dark.text-white 
                     .card-body
                         .chatroom-title-container
                             .chatroom-title Global Chat
                         .chatbox
-                            
+                            //- Messages will be appended here.
                         .messagebox
                           form
                             .input-group
                                 input(id="userInput" type="text").form-control
                                 button.btn.bg-success(id="chatbox-btn" type="submit")
                                     i.fa.fa-paper-plane
-    
-        
-            
 
 
