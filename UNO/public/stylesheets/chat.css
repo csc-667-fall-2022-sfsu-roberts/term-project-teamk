@@ -85,19 +85,28 @@
   }
   
   .chat-message-time {
+    width: 60%;
+    text-align: right;
+
     box-sizing: border-box;
     display: block;
     
-    margin-right: 10%;
+    margin-right: 5%;
   }
   
   .chat-message-user {
+    width: 30%;
     box-sizing: border-box;
     display: block;
   
     margin-right: 8px;
   
     font-weight: bold;
+  }
+
+  .chat-message-text{
+    margin-top: 5px;
+    width: 100%;
   }
   
   .messagebox {
