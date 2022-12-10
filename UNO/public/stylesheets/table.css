@@ -1,0 +1,60 @@
+.player1{
+    width: 20%;
+    height: 65%;
+    top: 3%;
+    left: 2%;
+    background-color: red;
+
+    position:absolute
+}
+
+.player2{
+    width: 50%;
+    height: 20%;
+    top: 3%;
+    left: 25%;
+    background-color: red;
+
+    position:absolute
+}
+
+.player3{
+    width: 20%;
+    height: 65%;
+    top: 3%;
+    left: 78%;
+    background-color: red;
+
+    position:absolute
+}
+
+.player4{
+    width: 96%;
+    height: 25%;
+    top: 70%;
+    left: 2%;
+    background-color: red;
+
+    position:absolute
+}
+
+.player-icon{
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    position:absolute
+}
+
+.player-cards{
+    width: 75%;
+    height: 90%;
+    top: 5%;
+    left: 20%;
+
+    background-color: green;
+    position:absolute
+}
+

@@ -1,275 +1,384 @@
 .card-R0 {
 	position:absolute;
-	clip:rect(0px 172px 260px 0px)
+	clip:rect(0px 172px 260px 0px);
+	top: -0px;
+	left: -0px;
 }
 
 .card-R1 {
 	position:absolute;
-	clip:rect(0px 374px 260px 200px)
+	clip:rect(0px 374px 260px 200px);
+	top: -0px;
+	left: -200px;
 }
 
 .card-R2 {
 	position:absolute;
-	clip:rect(0px 576px 260px 400px)
+	clip:rect(0px 576px 260px 400px);
+	top: -0px;
+	left: -400px;
 }
 
 .card-R3 {
 	position:absolute;
-	clip:rect(0px 778px 260px 600px)
+	clip:rect(0px 778px 260px 600px);
+	top: -0px;
+	left: -600px;
 }
 
 .card-R4 {
 	position:absolute;
-	clip:rect(0px 980px 260px 800px)
+	clip:rect(0px 980px 260px 800px);
+	top: -0px;
+	left: -800px;
 }
 
 .card-R5 {
 	position:absolute;
-	clip:rect(0px 1182px 260px 1000px)
+	clip:rect(0px 1182px 260px 1000px);
+	top: -0px;
+	left: -1000px;
 }
 
 .card-R6 {
 	position:absolute;
-	clip:rect(0px 1384px 260px 1200px)
+	clip:rect(0px 1384px 260px 1200px);
+	top: -0px;
+	left: -1200px;
 }
 
 .card-R7 {
 	position:absolute;
-	clip:rect(0px 1586px 260px 1400px)
+	clip:rect(0px 1586px 260px 1400px);
+	top: -0px;
+	left: -1400px;
 }
 
 .card-R8 {
 	position:absolute;
-	clip:rect(0px 1788px 260px 1600px)
+	clip:rect(0px 1788px 260px 1600px);
+	top: -0px;
+	left: -1600px;
 }
 
 .card-R9 {
 	position:absolute;
-	clip:rect(0px 1990px 260px 1800px)
+	clip:rect(0px 1990px 260px 1800px);
+	top: -0px;
+	left: -1800px;
 }
 
 .card-R10 {
 	position:absolute;
-	clip:rect(0px 2192px 260px 2000px)
+	clip:rect(0px 2192px 260px 2000px);
+	top: -0px;
+	left: -2000px;
 }
 
 .card-R11 {
 	position:absolute;
-	clip:rect(0px 2394px 260px 2200px)
+	clip:rect(0px 2394px 260px 2200px);
+	top: -0px;
+	left: -2200px;
 }
 
 .card-R12 {
 	position:absolute;
-	clip:rect(0px 2596px 260px 2400px)
+	clip:rect(0px 2596px 260px 2400px);
+	top: -0px;
+	left: -2400px;
 }
 
 .card-B0 {
 	position:absolute;
-	clip:rect(280px 172px 545px 0px)
+	clip:rect(280px 172px 545px 0px);
+	top: -280px;
+	left: -0px;
 }
 
 .card-B1 {
 	position:absolute;
-	clip:rect(280px 374px 545px 200px)
+	clip:rect(280px 374px 545px 200px);
+	top: -280px;
+	left: -200px;
 }
 
 .card-B2 {
 	position:absolute;
-	clip:rect(280px 576px 545px 400px)
+	clip:rect(280px 576px 545px 400px);
+	top: -280px;
+	left: -400px;
 }
 
 .card-B3 {
 	position:absolute;
-	clip:rect(280px 778px 545px 600px)
+	clip:rect(280px 778px 545px 600px);
+	top: -280px;
+	left: -600px;
 }
 
 .card-B4 {
 	position:absolute;
-	clip:rect(280px 980px 545px 800px)
+	clip:rect(280px 980px 545px 800px);
+	top: -280px;
+	left: -800px;
 }
 
 .card-B5 {
 	position:absolute;
-	clip:rect(280px 1182px 545px 1000px)
+	clip:rect(280px 1182px 545px 1000px);
+	top: -280px;
+	left: -1000px;
 }
 
 .card-B6 {
 	position:absolute;
-	clip:rect(280px 1384px 545px 1200px)
+	clip:rect(280px 1384px 545px 1200px);
+	top: -280px;
+	left: -1200px;
 }
 
 .card-B7 {
 	position:absolute;
-	clip:rect(280px 1586px 545px 1400px)
+	clip:rect(280px 1586px 545px 1400px);
+	top: -280px;
+	left: -1400px;
 }
 
 .card-B8 {
 	position:absolute;
-	clip:rect(280px 1788px 545px 1600px)
+	clip:rect(280px 1788px 545px 1600px);
+	top: -280px;
+	left: -1600px;
 }
 
 .card-B9 {
 	position:absolute;
-	clip:rect(280px 1990px 545px 1800px)
+	clip:rect(280px 1990px 545px 1800px);
+	top: -280px;
+	left: -1800px;
 }
 
 .card-B10 {
 	position:absolute;
-	clip:rect(280px 2192px 545px 2000px)
+	clip:rect(280px 2192px 545px 2000px);
+	top: -280px;
+	left: -2000px;
 }
 
 .card-B11 {
 	position:absolute;
-	clip:rect(280px 2394px 545px 2200px)
+	clip:rect(280px 2394px 545px 2200px);
+	top: -280px;
+	left: -2200px;
 }
 
 .card-B12 {
 	position:absolute;
-	clip:rect(280px 2596px 545px 2400px)
+	clip:rect(280px 2596px 545px 2400px);
+	top: -280px;
+	left: -2400px;
 }
 
 .card-Y0 {
 	position:absolute;
-	clip:rect(560px 172px 830px 0px)
+	clip:rect(560px 172px 830px 0px);
+	top: -560px;
+	left: -0px;
 }
 
 .card-Y1 {
 	position:absolute;
-	clip:rect(560px 374px 830px 200px)
+	clip:rect(560px 374px 830px 200px);
+	top: -560px;
+	left: -200px;
 }
 
 .card-Y2 {
 	position:absolute;
-	clip:rect(560px 576px 830px 400px)
+	clip:rect(560px 576px 830px 400px);
+	top: -560px;
+	left: -400px;
 }
 
 .card-Y3 {
 	position:absolute;
-	clip:rect(560px 778px 830px 600px)
+	clip:rect(560px 778px 830px 600px);
+	top: -560px;
+	left: -600px;
 }
 
 .card-Y4 {
 	position:absolute;
-	clip:rect(560px 980px 830px 800px)
+	clip:rect(560px 980px 830px 800px);
+	top: -560px;
+	left: -800px;
 }
 
 .card-Y5 {
 	position:absolute;
-	clip:rect(560px 1182px 830px 1000px)
+	clip:rect(560px 1182px 830px 1000px);
+	top: -560px;
+	left: -1000px;
 }
 
 .card-Y6 {
 	position:absolute;
-	clip:rect(560px 1384px 830px 1200px)
+	clip:rect(560px 1384px 830px 1200px);
+	top: -560px;
+	left: -1200px;
 }
 
 .card-Y7 {
 	position:absolute;
-	clip:rect(560px 1586px 830px 1400px)
+	clip:rect(560px 1586px 830px 1400px);
+	top: -560px;
+	left: -1400px;
 }
 
 .card-Y8 {
 	position:absolute;
-	clip:rect(560px 1788px 830px 1600px)
+	clip:rect(560px 1788px 830px 1600px);
+	top: -560px;
+	left: -1600px;
 }
 
 .card-Y9 {
 	position:absolute;
-	clip:rect(560px 1990px 830px 1800px)
+	clip:rect(560px 1990px 830px 1800px);
+	top: -560px;
+	left: -1800px;
 }
 
 .card-Y10 {
 	position:absolute;
-	clip:rect(560px 2192px 830px 2000px)
+	clip:rect(560px 2192px 830px 2000px);
+	top: -560px;
+	left: -2000px;
 }
 
 .card-Y11 {
 	position:absolute;
-	clip:rect(560px 2394px 830px 2200px)
+	clip:rect(560px 2394px 830px 2200px);
+	top: -560px;
+	left: -2200px;
 }
 
 .card-Y12 {
 	position:absolute;
-	clip:rect(560px 2596px 830px 2400px)
+	clip:rect(560px 2596px 830px 2400px);
+	top: -560px;
+	left: -2400px;
 }
 
 .card-G0 {
 	position:absolute;
-	clip:rect(840px 172px 1115px 0px)
+	clip:rect(840px 172px 1115px 0px);
+	top: -840px;
+	left: -0px;
 }
 
 .card-G1 {
 	position:absolute;
-	clip:rect(840px 374px 1115px 200px)
+	clip:rect(840px 374px 1115px 200px);
+	top: -840px;
+	left: -200px;
 }
 
 .card-G2 {
 	position:absolute;
-	clip:rect(840px 576px 1115px 400px)
+	clip:rect(840px 576px 1115px 400px);
+	top: -840px;
+	left: -400px;
 }
 
 .card-G3 {
 	position:absolute;
-	clip:rect(840px 778px 1115px 600px)
+	clip:rect(840px 778px 1115px 600px);
+	top: -840px;
+	left: -600px;
 }
 
 .card-G4 {
 	position:absolute;
-	clip:rect(840px 980px 1115px 800px)
+	clip:rect(840px 980px 1115px 800px);
+	top: -840px;
+	left: -800px;
 }
 
 .card-G5 {
 	position:absolute;
-	clip:rect(840px 1182px 1115px 1000px)
+	clip:rect(840px 1182px 1115px 1000px);
+	top: -840px;
+	left: -1000px;
 }
 
 .card-G6 {
 	position:absolute;
-	clip:rect(840px 1384px 1115px 1200px)
+	clip:rect(840px 1384px 1115px 1200px);
+	top: -840px;
+	left: -1200px;
 }
 
 .card-G7 {
 	position:absolute;
-	clip:rect(840px 1586px 1115px 1400px)
+	clip:rect(840px 1586px 1115px 1400px);
+	top: -840px;
+	left: -1400px;
 }
 
 .card-G8 {
 	position:absolute;
-	clip:rect(840px 1788px 1115px 1600px)
+	clip:rect(840px 1788px 1115px 1600px);
+	top: -840px;
+	left: -1600px;
 }
 
 .card-G9 {
 	position:absolute;
-	clip:rect(840px 1990px 1115px 1800px)
+	clip:rect(840px 1990px 1115px 1800px);
+	top: -840px;
+	left: -1800px;
 }
 
 .card-G10 {
 	position:absolute;
-	clip:rect(840px 2192px 1115px 2000px)
+	clip:rect(840px 2192px 1115px 2000px);
+	top: -840px;
+	left: -2000px;
 }
 
 .card-G11 {
 	position:absolute;
-	clip:rect(840px 2394px 1115px 2200px)
+	clip:rect(840px 2394px 1115px 2200px);
+	top: -840px;
+	left: -2200px;
 }
 
 .card-G12 {
 	position:absolute;
-	clip:rect(840px 2596px 1115px 2400px)
+	clip:rect(840px 2596px 1115px 2400px);
+	top: -840px;
+	left: -2400px;
 }
 
 .card-D0 {
 	position:absolute;
-	clip:rect(1120px 172px 1400px 0px)
+	clip:rect(1120px 172px 1400px 0px);
+	top: -1120px;
+	left: -0px;
 }
 
 .card-D1 {
 	position:absolute;
-	clip:rect(1120px 374px 1400px 200px)
+	clip:rect(1120px 374px 1400px 200px);
+	top: -1120px;
+	left: -200px;
 }
 
 .card-D2 {
 	position:absolute;
-	clip:rect(1120px 576px 1400px 400px)
-    
+	clip:rect(1120px 576px 1400px 400px);
+	top: -1120px;
+	left: -400px;
 }

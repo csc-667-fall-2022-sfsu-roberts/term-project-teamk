@@ -6,9 +6,6 @@ block content
         title= title 
         link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
         link(rel='stylesheet', href='/stylesheets/game_room.css')
-        link(rel='stylesheet', href='/stylesheets/table.css')
-        link(rel='stylesheet', href='/stylesheets/card.css')
-        link(rel='stylesheet', href='/stylesheets/cardSize.css')
 
         //- This input value is used by various scripts.
         input(type="hidden", id="roomId", name="roomId" value=gameId)
@@ -22,22 +19,20 @@ block content
                   .col-sm-12.col-md-9(id="parent")
                     .card.bg-dark.text-white(id="parent")
                       .card-body(id="lobby")
-                        .player1 player1
-                        .player2 player2
-                        .player3 player3
-                        .player4 player4(self)
-                          .player-icon
-                          .player-cards
-                            img(class="card-D2", id="card1", src="images/cards.png", alt="card")
-                            img(class="card-G8", id="card2", src="images/cards.png", alt="card")
-                            img(class="card-Y7", id="card3", src="images/cards.png", alt="card")
-                            img(class="card-B0", id="card4", src="images/cards.png", alt="card")
-                            img(class="card-R1", id="card5", src="images/cards.png", alt="card")
+                        h4.card-title Game Lobby 
+                        h5.card-subtitle.text-muted(id="lobby-status" hidden)
+                          span Waiting for 
+                          span.text-success(id="lobby-player-count")
+                          span other player(s) before starting...
+                        br
+                        .spinner-border(id="loading")
+                        .row(id="connected-players")
+
                   //- Game Chat Section
             .col-sm-12.col-md-3(id="chatroom")
                     .card.bg-dark.text-white 
                       .card-body
-                        .chatroom-title-container 
+                        .chatroom-title-container
                             h4.card-title Game Chat
                         .chatbox
                             //- Messages will be appended here.

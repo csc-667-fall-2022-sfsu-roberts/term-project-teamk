@@ -131,8 +131,14 @@
   
   #chatroom{
     opacity: 50%;
+ 
+    top: 28%;
+    left: 3.5%;
+    position: absolute;
   }
 
   #chatroom:hover{
     opacity: 100%;
   }
+
+  
