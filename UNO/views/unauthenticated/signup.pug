@@ -16,7 +16,7 @@ block content
                 span Account successfully created! Click 
                 a(href="/login") here
                 span  to login.
-            form(id="register-form")
+            form(id="register-form" action='/auth/signup' method='post')
               div.form-group
                 label(for="usernameInput") Username
                 input.form-control(required, id="usernameInput" type='text', placeholder="Enter username", name="username")

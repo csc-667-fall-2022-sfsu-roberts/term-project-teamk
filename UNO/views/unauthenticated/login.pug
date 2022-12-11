@@ -13,7 +13,7 @@ block content
             p.card-text Welcome
             hr
             div.alert.alert-danger(id="error-alert" role="alert" hidden) Invalid login credentials provided
-            form(id="login-form")
+            form(id="login-form" action='/auth/login' method='post')
               div.form-group
                 label(for="usernameInput") Username
                 input.form-control(required, id="usernameInput" type='text', placeholder="Enter username", name="username")
