@@ -46,3 +46,11 @@
     transform: translate(-20%, -50%);
     display: none;
 }
+
+#create-game{
+    display: none;
+}
+
+#join-game{
+    display: none;
+}

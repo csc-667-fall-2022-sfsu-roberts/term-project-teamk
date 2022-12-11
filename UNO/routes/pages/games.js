@@ -98,6 +98,31 @@ router.post("/:id/join", (request, response) => {
     });
 });
 
+router.post("/join", (request, response) => {
+  const { userId } = request.session;
+  const { id = "" } = request.body;
+
+  Games.addUser(userId, id)
+    .then(() => Games.userCount(id))
+    .then(({ count }) => {
+      request.app.io.emit(`game:${id}:player-joined`, {
+        count: parseInt(count),
+        required_count: 2,
+      });
+
+      if (parseInt(count) === 2) {
+        GameLogic.initialize(id).then(() =>
+          GameLogic.status(id, request.app.io)
+        );
+      }
+
+      response.redirect(`/games/${id}`);
+    })
+    .catch((error) => {
+      console.log({ error });
+    });
+});
+
 router.post("/:id/play", (request, response) => {
   const { userId } = request.session;
   const { id: game_id } = request.params;
