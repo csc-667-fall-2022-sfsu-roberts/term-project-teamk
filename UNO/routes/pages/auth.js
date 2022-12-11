@@ -51,20 +51,20 @@ router.get("/logout", (request, response)=>{
 });
 
 router.post("/logout", (request, response) => {
-    req.session.destroy((err) => {
+    request.session.destroy((err) => {
         if (err) {
             errorPrint("session could not be destroyed.");
             next(err);
         } else {
-            successPrint('Session was destroyed');
-            res.clearCookie('csid')
-            res.json({
+            response.clearCookie('csid');
+            response.render("public/index");
+            /*response.json({
                 status: "OK",
                 message: "user is logged out"
-            });
+            });*/
         }
     });
-    response.redirect("public/logout");
+    
 });
 
 module.exports=router;
