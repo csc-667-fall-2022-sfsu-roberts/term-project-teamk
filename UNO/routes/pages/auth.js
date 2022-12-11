@@ -45,5 +45,21 @@ router.post("/signup", (request, response)=>{
         response.redirect("/auth/signup");
     });
 });
+router.post('/logout', (req, res, next) => {
+    req.session.destroy((err) => {
+        if (err) {
+            errorPrint("session could not be destroyed.");
+            next(err);
+        } else {
+            successPrint('Session was destroyed');
+            res.clearCookie('csid')
+            res.json({
+                status: "OK",
+                message: "user is logged out"
+            });
+        }
+
+    })
+});
 
 module.exports=router;
