@@ -1,9 +1,8 @@
-extends layout 
+extends layout
 
-block styles
-  link(rel='stylesheet', href='/stylesheets/login.css')
+block content
+  
 
-block content 
   div.container
     div.row.mt-5
       div.col-sm-12.col-md-6.offset-md-3
@@ -17,7 +16,7 @@ block content
                 span Account successfully created! Click 
                 a(href="/login") here
                 span  to login.
-            form(id="register-form" action="/auth/signup" method="post")
+            form(id="register-form")
               div.form-group
                 label(for="usernameInput") Username
                 input.form-control(required, id="usernameInput" type='text', placeholder="Enter username", name="username")
@@ -32,8 +31,3 @@ block content
               br
               button.btn.btn-success(id="register-btn" type="submit") Register
               a.card-text.p-3(id="login-Signup" href="/login") Already have an account? Login
-  
-
-
-      
-      
