@@ -50,3 +50,35 @@ jspm_packages/
 
 # Next.js build output
 .next
+UNO/node_modules/.bin/acorn
+UNO/node_modules/.bin/babylon
+UNO/node_modules/.bin/cleancss
+UNO/node_modules/.bin/mime
+UNO/node_modules/.bin/resolve
+UNO/node_modules/.bin/uglifyjs
+UNO/node_modules/acorn-globals/node_modules/.bin/acorn
+UNO/node_modules/acorn-globals/node_modules/acorn/package.json
+UNO/node_modules/acorn/package.json
+UNO/node_modules/babylon/package.json
+UNO/node_modules/clean-css/package.json
+UNO/node_modules/is-expression/node_modules/.bin/acorn
+UNO/node_modules/is-expression/node_modules/acorn/package.json
+UNO/node_modules/mime/package.json
+UNO/node_modules/resolve/package.json
+UNO/node_modules/uglify-js/package.json
+UNO/node_modules/.bin/acorn
+UNO/node_modules/.bin/babylon
+UNO/node_modules/.bin/cleancss
+UNO/node_modules/.bin/mime
+UNO/node_modules/.bin/resolve
+UNO/node_modules/.bin/uglifyjs
+UNO/node_modules/acorn-globals/node_modules/.bin/acorn
+UNO/node_modules/acorn-globals/node_modules/acorn/package.json
+UNO/node_modules/acorn/package.json
+UNO/node_modules/babylon/package.json
+UNO/node_modules/clean-css/package.json
+UNO/node_modules/is-expression/node_modules/.bin/acorn
+UNO/node_modules/is-expression/node_modules/acorn/package.json
+UNO/node_modules/mime/package.json
+UNO/node_modules/resolve/package.json
+UNO/node_modules/uglify-js/package.json
