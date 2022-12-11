@@ -80,6 +80,30 @@
     position: absolute;
 }
 
+.state{
+    font-size: 24px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+.currentColor{
+    display: none;
+    font-size: 8px;
+    top: 10%;
+    left: 80%;
+    position: absolute;
+}
+
+.currentColor #color{
+    height: 50px;
+    width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    background-color: none;
+}
+
 .center .pile #cardpile1{
     top: 50%;
     left: 20%;

@@ -26,7 +26,12 @@ block content
                           .pile
                             
                           .last-played
-                            
+                          
+                          .game-state
+                            .state waiting for players 
+                            .currentColor
+                              .text Current Color
+                              .div(id = "color")
                         .player1 
                           .player-cards(id="player1-cards")
                           .player-icon(id="player-icon")
@@ -42,8 +47,6 @@ block content
                         .player4
                           .player-icon(id="player-icon")
                           .player-cards(id="player4-cards")
-                              
-                        
 
                   //- Game Chat Section
             .col-sm-12.col-md-3(id="chatroom")
