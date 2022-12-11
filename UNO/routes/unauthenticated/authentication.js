@@ -1,30 +1,49 @@
-const express = require("express");
-const router = express.Router();
+const { request, response } = require("express");
+const Users = require("../../db/users");
+const express =require("express");
+const router =express.Router();
 
 router.get('/login',(request, response)=> {
-    response.render("unauthenticated/login");
+    response.render("public/login");
+
 });
 router.post("/login", (request, response)=>{
     const{ username, password}= request.body;
 
-    // response.json({username, password})
-    request.session.authenticated=true;
-    request.session.username=username;
+    Users.login({username,password})
+    .then(({id})=>{
+        
+        request.session.authenticated=true;
+        request.session.userId= id;
+        request.session.username= username;
 
-    response.redirect("/lobby");
+        response.redirect("/lobby");
+    })
+    .catch(error=>{
+        response.redirect("/auth/login");
+    });
 });
 router.get("/signup", (request, response)=>{
-    response.render("unauthenticated/signup");
+    response.render("public/signup");
 });
+
+    
 
 router.post("/signup", (request, response)=>{
-    const{ username, password}= request.body;
-    console.log({username, password});
-    // response.json({username, password})
-    request.session.authenticated=true;
-    request.session.username=username;
+    const{ username, email, password}= request.body;
 
-    response.redirect("/lobby");
+    Users.signUp({username, email, password})
+    .then(({id, username})=>{
+        
+        request.session.authenticated=true;
+        request.session.userId= id;
+        request.session.username= username;
+
+        response.redirect("/lobby");
+    })
+    .catch(error=>{
+        response.redirect("/auth/signup");
+    });
 });
 
-module.exports = router;
+module.exports=router;

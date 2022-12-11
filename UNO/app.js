@@ -11,25 +11,13 @@ if(process.env.NODE_ENV === 'development') {
   require("dotenv").config();
 }
 
-
-//v1
-/*
 const indexRouter = require('./routes/pages/index');
 const usersRouter = require('./routes/users');
 const testsRouter = require('./routes/tests');
 const authRouter = require('./routes/pages/auth');
 const lobbyRouter = require('./routes/pages/lobby');
 const gamesRouter = require('./routes/pages/games');
-*/
-
-//v2
-const homeRouter = require('./routes/unauthenticated/index');
-const authenticationRouter = require('./routes/unauthenticated/authentication')
-const lobbyRouter = require('./routes/authenticated/lobby')
-const gamesRouter = require('./routes/authenticated/games')
-const testsRouter = require('./routes/tests');
-const authRouter = require('./routes/unauthenticated/authentication')
-// const authRouter = require('./routes/pages/auth');
+const chatRouter = require("./routes/api/chat");
 
 const app = express();
 
@@ -44,25 +32,15 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(sessionInstance);
 
-//v1
-/*
+
 app.use('/', indexRouter);
 app.use("/lobby",protect,lobbyRouter);
 app.use('/users', usersRouter);
 app.use("/tests", testsRouter);
 app.use("/auth", authRouter);
 app.use("/games", protect, gamesRouter);
-*/
+app.use("/chat", protect, chatRouter);
 
-//v2
-app.use('/', homeRouter);
-app.use('/',authenticationRouter);
-app.use('/lobby',lobbyRouter);
-app.use('/games',gamesRouter);
-
-
-app.use("/tests", testsRouter);
-app.use("/auth", authRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
