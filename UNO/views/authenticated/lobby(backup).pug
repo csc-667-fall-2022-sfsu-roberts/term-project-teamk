@@ -19,14 +19,15 @@ block content
                   .col-sm-12.col-md-9(id="parent")
                     .card.bg-dark.text-white(id="parent")
                       .card-body(id="lobby")
-                        h4.card-title Game Lobby 
+                        h4 lobby
+                        .spinner-border(id="loading")
+                        .row(id="connected-players")
                         h5.card-subtitle.text-muted(id="lobby-status" hidden)
                           span Waiting for 
                           span.text-success(id="lobby-player-count")
                           span other player(s) before starting...
                         br
-                        .spinner-border(id="loading")
-                        .row(id="connected-players")
+                        
 
                   //- Game Chat Section
             .col-sm-12.col-md-3(id="chatroom")
