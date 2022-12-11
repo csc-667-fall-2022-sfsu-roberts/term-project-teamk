@@ -7,6 +7,7 @@ router.get('/login',(request, response)=> {
     response.render("public/login");
 
 });
+
 router.post("/login", (request, response)=>{
     const{ username, password}= request.body;
 
@@ -23,11 +24,10 @@ router.post("/login", (request, response)=>{
         response.redirect("/auth/login");
     });
 });
+
 router.get("/signup", (request, response)=>{
     response.render("public/signup");
 });
-
-    
 
 router.post("/signup", (request, response)=>{
     const{ username, email, password}= request.body;
@@ -45,7 +45,12 @@ router.post("/signup", (request, response)=>{
         response.redirect("/auth/signup");
     });
 });
-router.post('/logout', (req, res, next) => {
+
+router.get("/logout", (request, response)=>{
+    response.render("public/logout");
+});
+
+router.post("/logout", (request, response) => {
     req.session.destroy((err) => {
         if (err) {
             errorPrint("session could not be destroyed.");
@@ -58,8 +63,8 @@ router.post('/logout', (req, res, next) => {
                 message: "user is logged out"
             });
         }
-
-    })
+    });
+    response.redirect("public/logout");
 });
 
 module.exports=router;

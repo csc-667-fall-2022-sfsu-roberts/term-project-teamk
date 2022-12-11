@@ -19,6 +19,7 @@ const signUp =({username, email, password}) =>{
 /* const login =({username, password}) =>{
     return db.one(LOGIN_USER, {username, password});
 } */
+
 const login = ({ username, password }) => {
     return db
         .one(LOGIN_USER, [username])
@@ -43,8 +44,6 @@ const login = ({ username, password }) => {
             // Handle error thrown by bcrypt.compare()
             return Promise.reject(`Unable to log in: ${error.message}`);
         });
-  };
-
-  
+};
 
 module.exports ={signUp, login};
