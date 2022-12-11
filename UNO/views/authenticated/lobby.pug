@@ -22,17 +22,48 @@ block content
                   .col-sm-12.col-md-9(id="parent")
                     .card.bg-dark.text-white(id="parent")
                       .card-body(id="lobby")
-                        .player1 player1
-                        .player2 player2
-                        .player3 player3
-                        .player4 player4(self)
-                          .player-icon
-                          .player-cards
-                            img(class="card-D2", id="card1", src="images/cards.png", alt="card")
-                            img(class="card-G8", id="card2", src="images/cards.png", alt="card")
-                            img(class="card-Y7", id="card3", src="images/cards.png", alt="card")
-                            img(class="card-B0", id="card4", src="images/cards.png", alt="card")
-                            img(class="card-R1", id="card5", src="images/cards.png", alt="card")
+                        .center
+                          .pile
+                            .card-back(id="cardpile1")
+                            .card-back(id="cardpile2")
+                            .card-back(id="cardpile3")
+                            .card-back(id="cardpile4")
+                          .last-played
+                            .card-Y12(id="card1")
+                            .card-G12(id="card2")
+                            .card-R12(id="card3")
+                            .card-B12(id="card4")
+                            .card-D1(id="card5")
+                        .player1 
+                          .player-cards(id="player1-cards")
+                            .card-back(id="card1")
+                            .card-back(id="card2")
+                            .card-back(id="card3")
+                            .card-back(id="card4")
+                            .card-back(id="card5")
+                          .player-icon(id="player-icon")
+                        .player2
+                          .player-cards(id="player2-cards")
+                            .card-back(id="card1")
+                            .card-back(id="card2")
+                            .card-back(id="card3")
+                            .card-back(id="card4")
+                            .card-back(id="card5")
+                          .player-icon(id="player-icon")
+                        .player3
+                          .player-cards(id="player3-cards")
+                            .card-back(id="card1")
+                          .player-icon(id="player-icon")
+                        .player4
+                          .player-icon(id="player-icon")
+                          .player-cards(id="player4-cards")
+                              .card-R0(id="card1")
+                              .card-Y12(id="card2")
+                              .card-G11(id="card3")
+                              .card-D2(id="card4")
+                              .card-B8(id="card5")
+                        
+
                   //- Game Chat Section
             .col-sm-12.col-md-3(id="chatroom")
                     .card.bg-dark.text-white 
