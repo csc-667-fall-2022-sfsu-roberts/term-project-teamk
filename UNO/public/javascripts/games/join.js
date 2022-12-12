@@ -157,13 +157,18 @@ fetch(window.location.pathname, { method: "post" })
   .then(({ game_id }) => {
     socket.on(`game:${game_id}:player-joined`, ({ count, required_count }) => {
       document.querySelector("span.current-count").innerHTML = count;
+      var player = (5 - count)%4;
+      document.getElementById(`player${player}-loading`).style.display = "none";
+      
 
+      //full, ready for start game
       if (count === required_count) {
-        document.querySelector("p#waiting").classList.add("hidden");
+        /*document.querySelector("p#waiting").classList.add("hidden");
         document.querySelector("#game-table").classList.remove("hidden");
         document
           .querySelector("#game-table")
-          .classList.add(`player-count-${count}`);
+          .classList.add(`player-count-${count}`);*/
+        document.getElementsById(`game-state-text`).innerHTML = 'Ready for start';
       }
     });
 

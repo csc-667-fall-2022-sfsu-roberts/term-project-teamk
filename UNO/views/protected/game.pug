@@ -25,22 +25,22 @@ block content
                           .last-played
                           
                           .game-state
-                            .state waiting for players (#[span.current-count #{count}] of #[span.required-count #{required_count}])
+                            .state(id = "game-state-text") waiting for players (#[span.current-count #{count}] of #[span.required-count #{required_count}])
                             .currentColor
                               .text Current Color
                               .div(id = "color")
                         .player1 
                           .player-cards(id="player1-cards")
                           .player-icon(id="player-icon")
-                            .spinner-border(id="loading")
+                            .spinner-border(id="player1-loading")
                         .player2
                           .player-cards(id="player2-cards")
                           .player-icon(id="player-icon")
-                            .spinner-border(id="loading")
+                            .spinner-border(id="player2-loading")
                         .player3
                           .player-cards(id="player3-cards")
                           .player-icon(id="player-icon")
-                            .spinner-border(id="loading")
+                            .spinner-border(id="player3-loading")
                         .player4
                           .player-icon(id="player-icon")
                           .player-cards(id="player4-cards")
@@ -57,3 +57,4 @@ block content
 
 block footer
   script(src="/javascripts/games/join.js")
+  script(src="/javascripts/game-management.js")
