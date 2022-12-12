@@ -11,21 +11,15 @@ block content
   //-h1 Game page #{id} (#{title})
 
   //-#waiting(class=`${ready ? "hidden" : ""}`) Waiting on users 
-  .container-fluid.d-flex.flex-column.h-100
-            .row.flex-fill.d-flex.flex-row
-              .game-container.col(id="parent")
-                .row.p-5(id="parent")
-                  //- Lobby Status Section
-                  .col-sm-12.col-md-9(id="parent")
-                    .card.bg-dark.text-white(id="parent")
-                      .card-body(id="lobby")
+
+  #waitting(class=`${ready ? "hidden": ""}`)
+    .card-body(id="lobby")
                         .center
                           .pile
-                            
                           .last-played
-                          
                           .game-state
-                            .state(id = "game-state-text") waiting for players (#[span.current-count #{count}] of #[span.required-count #{required_count}])
+                            .state(id = "game-state-text") (#[span.current-count #{count}])
+                            //-waiting for players (#[span.current-count #{count}] of #[span.required-count #{required_count}])
                             .currentColor
                               .text Current Color
                               .div(id = "color")
@@ -42,9 +36,55 @@ block content
                           .player-icon(id="player-icon")
                             .spinner-border(id="player3-loading")
                         .player4
-                          .player-icon(id="player-icon")
+                          .player-icon(id="player-icon") #{username}
                           .player-cards(id="player4-cards")
   #game-table(class=`${ready ? "" : "hidden"}`)
+    .card-body(id="lobby")
+                        .center
+                          .pile
+                            .card-back(id="cardpile1")
+                            .card-back(id="cardpile2")
+                            .card-back(id="cardpile3")
+                            .card-back(id="cardpile4")
+                          .last-played
+                            .card-Y12(id="card1")
+                            .card-G12(id="card2")
+                            .card-R12(id="card3")
+                            .card-B12(id="card4")
+                            .card-D1(id="card5")
+                          .game-state
+                            .state player4's turn 
+                            .currentColor
+                              .text Current Color
+                              .div(id = "color")
+                        .player1 
+                          .player-cards(id="player1-cards")
+                            .card-back(id="card1")
+                            .card-back(id="card2")
+                            .card-back(id="card3")
+                            .card-back(id="card4")
+                            .card-back(id="card5")
+                          .player-icon(id="player-icon")
+                        .player2
+                          .player-cards(id="player2-cards")
+                            .card-back(id="card1")
+                            .card-back(id="card2")
+                            .card-back(id="card3")
+                            .card-back(id="card4")
+                            .card-back(id="card5")
+                          .player-icon(id="player-icon")
+                        .player3
+                          .player-cards(id="player3-cards")
+                            .card-back(id="card1")
+                          .player-icon(id="player-icon")
+                        .player4
+                          .player-icon(id="player-icon")
+                          .player-cards(id="player4-cards")
+                              .card-R0(id="card1")
+                              .card-Y12(id="card2")
+                              .card-G11(id="card3")
+                              .card-D2(id="card4")
+                              .card-B8(id="card5")
     .draw-pile
       .card.special
     #discard
