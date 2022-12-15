@@ -1,79 +1,70 @@
 extends layout
 
 block styles
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/chat.css')
+    link(rel='stylesheet', href='/stylesheets/index.css')
     link(rel='stylesheet', href='/stylesheets/game_room.css')
-    link(rel='stylesheet', href='/stylesheets/table.css')
-    link(rel='stylesheet', href='/stylesheets/card.css')
-    link(rel='stylesheet', href='/stylesheets/cardSize.css')
 
 block content
-  //-h1 Game page #{id} (#{title})
 
-  //-#waiting(class=`${ready ? "hidden" : ""}`) Waiting on users 
-  .container-fluid.d-flex.flex-column.h-100
-            .row.flex-fill.d-flex.flex-row
-              .game-container.col(id="parent")
-                .row.p-5(id="parent")
-                  //- Lobby Status Section
-                  .col-sm-12.col-md-9(id="parent")
-                    .card.bg-dark.text-white(id="parent")
-                      .card-body(id="lobby")
-                        .center
-                          .pile
-                            .card-back(id="cardpile1")
-                            .card-back(id="cardpile2")
-                            .card-back(id="cardpile3")
-                            .card-back(id="cardpile4")
-                          .last-played
-                            .card-Y12(id="card1")
-                            .card-G12(id="card2")
-                            .card-R12(id="card3")
-                            .card-B12(id="card4")
-                            .card-D1(id="card5")
-                          .game-state
-                            .state player4's turn 
-                            .currentColor
-                              .text Current Color
-                              .div(id = "color")
-                        .player1 
-                          .player-cards(id="player1-cards")
-                            .card-back(id="card1")
-                            .card-back(id="card2")
-                            .card-back(id="card3")
-                            .card-back(id="card4")
-                            .card-back(id="card5")
-                          .player-icon(id="player-icon")
-                        .player2
-                          .player-cards(id="player2-cards")
-                            .card-back(id="card1")
-                            .card-back(id="card2")
-                            .card-back(id="card3")
-                            .card-back(id="card4")
-                            .card-back(id="card5")
-                          .player-icon(id="player-icon")
-                        .player3
-                          .player-cards(id="player3-cards")
-                            .card-back(id="card1")
-                          .player-icon(id="player-icon")
-                        .player4
-                          .player-icon(id="player-icon")
-                          .player-cards(id="player4-cards")
-                              .card-R0(id="card1")
-                              .card-Y12(id="card2")
-                              .card-G11(id="card3")
-                              .card-D2(id="card4")
-                              .card-B8(id="card5")
-  #game-table(class=`${ready ? "" : "hidden"}`)
-    .draw-pile
-      .card.special
-    #discard
+    head 
+        title= title 
 
-  .select-color
-      .select-red
-      .select-blue
-      .select-green
-      .select-yellow
+    .maindiv
+        .main-title Dashboard 
 
-block footer
-  script(src="/javascripts/games/join.js")
+    .col-sm-12.col-md-3(id="GlobalChat")
+                .card.bg-dark.text-white 
+                    .card-body
+                        .chatroom-title-container
+                            .chatroom-title Global Chat
+                        .chatbox
+                            .chat-message-container
+                                .chat-message-user user1
+                                .chat-message-time time1
+                                .chat-message-text(id="text1") text1
+                        .messagebox
+                          form
+                            .input-group
+                                input(id="userInput" type="text").form-control
+                                button.btn.bg-success(id="chatbox-btn" type="submit")
+                                    i.fa.fa-paper-plane
+
+    .enter(id="create-game")
+      .input-text enter room name
+      .input-area
+        form(action="/games/create" method="post")
+          label(for="title") Title (optional):
+          input#title(type="text" name="title")
+          button#create-game Create a new game
+
+    .enter(id="join-game")
+      .input-text enter room name
+      .input-area
+        form(action=`/games/join` method="post" target="_blank")
+          label(for="title") Title (optional):
+          input#title(type="text" name="Room name" onporpertychange="update-game-id(event)")
+          button#create-game join game
+
+
+    //-.enter
+    //-  .input-text enter room name
+    //-  .input-area
+    //-      form(action=`/games/${game.id}/join` method="post" target="_blank")
+    //-        input#title(type="text" name="Room name")
+    //-        button Join game
+
+block footer 
+  script.
+    function show-create-game(){
+      document.getElementById("create-game").style.display = "block";
+      document.getElementById("join-game").style.display = "none";
+    }
+    
+    script(src="/javascripts/chat.js")
+    script(src="/javascripts/game-management.js")
+  //- script(src="/socket.io/socket.io.js")
+  script(src="/javascripts/chat.js")
+  script(src="/javascripts/game-management.js")
+
+  
