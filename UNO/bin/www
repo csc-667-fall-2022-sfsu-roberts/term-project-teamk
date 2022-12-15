@@ -3,29 +3,25 @@
 /**
  * Module dependencies.
  */
-
-const app = require('../app');
+const express = require('express');
+const application = express();
 const debug = require('debug')('uno:server');
 const http = require('http');
+const socketInit = require("../sockets/initialization");
 
 /**
  * Get port from environment and store in Express.
  */
 
 const port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
+application.set('port', port);
 
 /**
  * Create HTTP server.
  */
 
-const server = http.createServer(app);
-const io = require('socket.io')(server);
-
-io.on('connection',socket => {
-  console.log("socket connection... ");
-})
-
+const server = http.createServer(application);
+socketInit(server, application);
 /**
  * Listen on provided port, on all network interfaces.
  */
