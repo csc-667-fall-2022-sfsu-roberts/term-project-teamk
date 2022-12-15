@@ -3,6 +3,7 @@
 
 **Set up development environment**
 ``` 
+cd UNO
 npm install
 npm start
 ```
