@@ -1,5 +1,5 @@
 // import io from "socket.io-client";
-const socket = io();
+// const socket = io();
 document
   .querySelector("#message-field")
   .addEventListener("keydown", (event) => {

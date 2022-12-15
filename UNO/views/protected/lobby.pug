@@ -1,83 +1,64 @@
 extends layout
 
 block styles
-    link(rel='stylesheet', href='/stylesheets/chat.css')
-    link(rel='stylesheet', href='/stylesheets/index.css')
+  link(rel='stylesheet', href='/stylesheets/chat.css')
+  link(rel='stylesheet',href='/stylesheets/lobby.css')
 
 block content
+  h1 Lobby 
+  if username
+    div(id="lobbyHeader")
+      h2 Welcome #{username} 
 
-    head 
-        title= title 
+  #games-list(style="float: right")
+    h2 Joinable Games
+    table
+      each game in games.joinable
+        tr
+          div(id="join-title")
+            td= game.title
+            td
+              form(action=`/games/${game.id}/join` method="post" target="_blank")
+                button Join game
 
-    .maindiv
-        .main-title Dashboard 
-    
-    if username
-    .button-container
-              .button-container-buttons(id="createGame")
-                  .create-game-btn.btn.bg-success(id="new-game-btn" onclick="showgame()") Create Game 
-              .button-container-buttons(id="joinGame")
-                  .join-game-btn.btn.bg-success(id="new-game-btn" onclick="showjoin()") Join Game 
-              .button-container-buttons(id="enterGameId")
-                  input(id="roomId", name="roomId" value="lobby")
-    
-
-    .col-sm-12.col-md-3(id="GlobalChat")
-                .card.bg-dark.text-white 
-                    .card-body
-                        .chatroom-title-container
-                            .chatroom-title Global Chat
-                        .chatbox
-                            .chat-message-container
-                                .chat-message-user user1
-                                .chat-message-time time1
-                                .chat-message-text(id="text1") text1
-                        .messagebox
-                          form
-                            .input-group
-                                input(id="userInput" type="text").form-control
-                                button.btn.bg-success(id="chatbox-btn" type="submit")
-                                    i.fa.fa-paper-plane
-
-    .enter(id="create-game")
-      .input-text enter room name(create)
-      .input-area
-        form(action="/games/create" method="post")
-          label(for="title") Title (optional):
-          input#title(type="text" name="title")
-          button#create-game Create a new game
-
-    .enter(id="join-game")
-      .input-text enter room name(join)
-      .input-area
-        form(action=`/games/join` method="post" target="_blank")
-          label(for="title") Title (optional):
-          input#title(type="text" name="Room name")
-          button#create-game join game
-
-    //-.enter
-    //-  .input-text enter room name
-    //-  .input-area
-    //-      form(action=`/games/${game.id}/join` method="post" target="_blank")
-    //-        input#title(type="text" name="Room name")
-    //-        button Join game
-
-block footer 
-    script.
-      function showgame(){
-        document.getElementById("create-game").style.display = "block";
-        document.getElementById("join-game").style.display = "none";
-      }
-
-      function showjoin(){
-        document.getElementById("create-game").style.display = "none";
-        document.getElementById("join-game").style.display = "block";
-      }
-    
-    script(src="/javascripts/chat.js")
-    script(src="/javascripts/game-management.js")
-    //- script(src="/socket.io/socket.io.js")
-    script(src="/javascripts/chat.js")
-    script(src="/javascripts/game-management.js")
-
+  h2 Active Games
+  ul
+    each game in games.active
+      li
+        a(href=`/games/${game.id}` target="_blank")= game.title
   
+  form(action="/games/create" method="post")
+    div(id="game-form-container")
+      h2 New Game
+      div(id="input-label")
+        label(for="title") Title (optional):
+        input#title(type="text" name="title")
+      button#create-game Create a new game
+
+  template#message
+    span.sender
+    span.content
+    span.timestamp
+    br
+
+  #chat(style="float: right")
+    .my-col(id="GlobalChat")
+      .my-card
+        .my-card-body
+          .my-chatroom-title-container
+            .my-chatroom-title Global Chat
+          .my-chatbox
+            .my-chat-message-container
+              .my-chat-message-user user1
+              .my-chat-message-time time1
+              .my-chat-message-text(id="text1") text1
+    #messages
+    #send
+      .my-messagebox
+        .input-group
+          input(type="text" id="message-field").my-form-control
+
+block footer
+  script(src="/javascripts/chat.js")
+  script(src="/javascripts/game-management.js")
+

@@ -10,7 +10,7 @@ const LOGIN_USER ="SELECT id, username, password FROM users WHERE username=$1";
 // const LOGIN_USER =
 //   "SELECT id, username, password FROM users WHERE username=$1 AND password=$2";
 
-const signUp =({username, email, password}) =>{
+const register =({username, email, password}) =>{
     return db
         .none(LOOKUP_USER_BY_USERNAME, {username})
         .then(()=> bcrypt.hash(password,10))
@@ -46,4 +46,4 @@ const login = ({ username, password }) => {
         });
 };
 
-module.exports ={signUp, login};
+module.exports ={register, login};

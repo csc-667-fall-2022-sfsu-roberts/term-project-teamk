@@ -1,7 +1,6 @@
-const express =require("express");
+const express = require("express");
 
-const router =express.Router();
-
+const router = express.Router();
 const Games = require("../../db/games");
 const GameLogic = require("../../game-logic");
 const CARDS = require("../../config/cards");

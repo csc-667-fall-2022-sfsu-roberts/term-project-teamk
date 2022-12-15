@@ -25,14 +25,14 @@ router.post("/login", (request, response)=>{
     });
 });
 
-router.get("/signup", (request, response)=>{
-    response.render("public/signup");
+router.get("/register", (request, response)=>{
+    response.render("public/register");
 });
 
-router.post("/signup", (request, response)=>{
+router.post("/register", (request, response)=>{
     const{ username, email, password}= request.body;
 
-    Users.signUp({username, email, password})
+    Users.register({username, email, password})
     .then(({id, username})=>{
         
         request.session.authenticated=true;
@@ -42,7 +42,7 @@ router.post("/signup", (request, response)=>{
         response.redirect("/lobby");
     })
     .catch(error=>{
-        response.redirect("/auth/signup");
+        response.redirect("/auth/register");
     });
 });
 

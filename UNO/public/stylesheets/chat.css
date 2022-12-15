@@ -1,144 +1,243 @@
-  /* =============================================================================== */
-  /* Global Chat CSS */
-  /* =============================================================================== */
-  .chatroom {
-    box-sizing: border-box;
-  
-    flex-direction: column;
-    justify-content: center;
-  
-    height: 90vh;
-    max-height: 90vh;
-    
-    width: 30%;
-  
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+.chatroom {
+  box-sizing: border-box;
 
-    /*disolay*/
-    display: flex;
-    margin-left: 5%;
-    
-    /*position: absolute;
-    bottom: 10px;
-    left: 20px;*/
-  }
-  
-  .chatroom-title-container {
-    box-sizing: border-box;
-    display: block;
-    min-height: 50px;
-  
-    padding: 8px;
-  
-    flex-grow: 0.05;
-  
-    /* border-bottom: 2px solid grey; */
-  }
-  
-  .chatroom-title {
-    display: inline-block;
-    width: 100%;
-    vertical-align: middle;
-    text-align: center;
-  
-    color: white;
-  }
-  
-  .chatbox {
-    box-sizing: border-box;
-    display: flex;
-  
-    /* max-height: 100%; */
-  
-    flex-direction: column;
-  
-    flex-grow: 4;
-  
-    box-sizing: border-box;
-    height: 550px;
-    overflow: hidden;
-    overflow-y: auto;
-    /* overflow-x: auto; */
-    word-wrap: break-word;
-    display: block;
-    word-break: break-all;
-  }
-  
-  .chat-message-container {
-    box-sizing: border-box;
-    display: flex;
-  
-    flex-direction: row;
-    flex-wrap: wrap;
-  
-    justify-content: left;
-    min-height: 1 rem;
-    padding: 8px;
-  
-    font-size: 16px;
-    font-weight: normal;
-    color: white;
-  
-    overflow:hidden;
-  
-    border-top: 1px solid grey;
-  }
-  
-  .chat-message-time {
-    width: 60%;
-    text-align: right;
+  flex-direction: column;
+  justify-content: center;
 
-    box-sizing: border-box;
-    display: block;
-    
-    margin-right: 5%;
-  }
+  height: 90vh;
+  max-height: 90vh;
   
-  .chat-message-user {
-    width: 30%;
-    box-sizing: border-box;
-    display: block;
-  
-    margin-right: 8px;
-  
-    font-weight: bold;
-  }
+  width: 30%;
 
-  .chat-message-text{
-    margin-top: 5px;
-    width: 100%;
-  }
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+  /*disolay*/
+  display: flex;
+  margin-left: 5%;
   
-  .messagebox {
-    box-sizing: border-box;
-    display: block;
+  /*position: absolute;
+  bottom: 10px;
+  left: 20px;*/
+}
+
+.my-chatroom-title-container {
+  box-sizing: border-box;
+  display: block;
+  min-height: 50px;
+  border-bottom: 2px solid grey;
+  background-color: #A9A9A9;
+  padding: 8px;
+
+  flex-grow: 0.05;
+
+  /* border-bottom: 2px solid grey; */
+}
+
+.my-chatroom-title {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+
+  color: black;
+}
+
+.my-chatbox {
+  box-sizing: border-box;
+  display: flex;
+
+  /* max-height: 100%; */
+  background-color: #A9A9A9;
+  flex-direction: column;
+
+  flex-grow: 4;
+
+  box-sizing: border-box;
+  height: 550px;
+  overflow: hidden;
+  overflow-y: auto;
+  /* overflow-x: auto; */
+  word-wrap: break-word;
+  display: block;
+  word-break: break-all;
+}
+
+.my-chat-message-container {
+  box-sizing: border-box;
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: left;
+  min-height: 1 rem;
+  padding: 8px;
+
+  font-size: 16px;
+  font-weight: normal;
+  color: #A9A9A9;
+
+  overflow:hidden;
+
+  border-top: 1px solid grey;
+}
+
+.my-chat-message-time {
+  width: 60%;
+  text-align: right;
+
+  box-sizing: border-box;
+  display: block;
   
-    padding: 8px;
-    padding-top: 16px;
-    height: 75px;
-  
-    flex-grow: 0.05;
-    /* border-top: 2px solid grey; */
-  }
-  
-  .form-control {
-    margin: 0;
-  }
-  
-  .btn.bg-success {
-    color: white;
-  }
-  
-  #chatroom{
-    opacity: 50%;
+  margin-right: 5%;
+}
+
+.my-chat-message-user {
+  width: 30%;
+  box-sizing: border-box;
+  display: block;
+
+  margin-right: 8px;
+
+  font-weight: bold;
+}
+
+.my-chat-message-text{
+  margin-top: 5px;
+  width: 100%;
+}
+
+.my-messagebox {
+  box-sizing: border-box;
+  display: block;
+
+  padding: 8px;
+  padding-top: 16px;
+  height: 75px;
+
+  flex-grow: 0.05;
+  /* border-top: 2px solid grey; */
+}
+
+.my-form-control {
+  margin: 0;
+}
+
+.btn.bg-success {
+  color: white;
+}
+
+#chatroom{
+  opacity: 50%;
+
+  bottom: 10px;
+  left: 3.5%;
+  position: absolute;
+}
+
+#chatroom:hover{
+  opacity: 100%;
+}
+
+#messages{
+  background-color: #A9A9A9;
+  color: black;
+  margin-top: 0px;
+
+}
+#send{
+  background-color: #A9A9A9;
+  color: black;
+
+}
+.card-body{
+  margin-top: -150px;
+  width: 250px;
+}
+#message-field{
+  width: 220px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* align the form to the center of the page */
+  justify-content: center;  /* center the form vertically */
  
-    bottom: 10px;
-    left: 3.5%;
-    position: absolute;
-  }
+}
+label{
+  display:flex;
+  flex-direction: column;
+  margin-right: 10px;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
 
-  #chatroom:hover{
-    opacity: 100%;
-  }
+/* Style the input box and button as rows of the flexbox */
+input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 25px;
+ 
+}
 
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: green;
+  color:white;
+  padding: inherit;
+  width: 100px;
+  margin: auto; 
+}
+#game-form-container {
+  width: 300px;
+  height:300px;
+  border-style: solid;  /* set the border style to solid */
+  border-color: black;  /* set the border color to black */
+  border-width: 1px;  /* set the border width to 1px */
+  padding: 5px;  /* add padding of 5px around the div */
+  align-items: center;
+  text-align: center;
+}
+ 
+#input-label{
+  display:flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 40px;
   
+}
+#games-list{
+  display: flex;
+  flex-direction: column;
+  margin-top:0px;
+  align-items: center;
+  width:250px;
+  /* margin-left: 1000px; */
+}
+#join-title{
+  display:flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+#lobbyHeader{
+  text-align: center;
+}
+
+/* body {
+  background-image: url('/path/to/your/image.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} */
+
+
+/* .card {
+  background-color: transparent !important;
+  height: 400px;
+  width:auto;
+
+} */

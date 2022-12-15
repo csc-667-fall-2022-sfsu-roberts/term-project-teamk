@@ -1,56 +1,23 @@
-.maindiv{
-    width: 60%;
-    right: 0;
-    position: absolute;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url("../images/unoImage.png")!important;
+    background-image: no-repeat; */
+    color: white !important;
 }
-
-.button-container{
-    width: 60%;
-    
-    color: white;
-}
-
-.button-container-buttons{
-    width: 100%;
-    margin-top: 5%;
-    position: relative;
-}
-
-#GlobalChat{
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-80%, -50%);
-    
-    color: white;
-}
-
-#createGame{
-    position: absolute;
-    top: 20%;
-    left: 90%;
-    transform: translate(-20%, -50%);
-}
-
-#joinGame{
-    position: absolute;
-    top: 30%;
-    left: 90%;
-    transform: translate(-20%, -50%);
-}
-
-#enterGameId{
-    position: absolute;
-    top: 30%;
-    left: 90%;
-    transform: translate(-20%, -50%);
-    display: none;
-}
-
-#create-game{
-    display: none;
-}
-
-#join-game{
-    display: none;
-}
+#lobbyHeader {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border: transparent;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+  }
+  
