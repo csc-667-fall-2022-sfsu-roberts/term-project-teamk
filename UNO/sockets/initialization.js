@@ -24,6 +24,11 @@ const init =(httpServer, app) => {
         console.log("Connection happened");
     })
 
+    io.on("disconnection", (socket) => {
+        console.log("disconnection");
+      });
+
+
     app.io =io;
 }
 
