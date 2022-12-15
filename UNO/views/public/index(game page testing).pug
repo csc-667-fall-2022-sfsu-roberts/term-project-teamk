@@ -24,19 +24,19 @@ block content
                           .last-played
                           .game-state
                             .state(id = "game-state-text") (#[span.current-count #{count}])
-                            //-waiting for players 
+                            //-waiting for players (#[span.current-count #{count}] of #[span.required-count #{required_count}])
                             .currentColor
                               .text Current Color
                               .div(id = "color")
-                        .player1 
+                        .player1(hidden)
                           .player-cards(id="player1-cards")
                           .player-icon(id="player-icon")
                             .spinner-border(id="player1-loading")
-                        .player2
+                        .player2(hidden)
                           .player-cards(id="player2-cards")
                           .player-icon(id="player-icon")
                             .spinner-border(id="player2-loading")
-                        .player3
+                        .player3(hidden)
                           .player-cards(id="player3-cards")
                           .player-icon(id="player-icon")
                             .spinner-border(id="player3-loading")
@@ -57,16 +57,16 @@ block content
                             .currentColor
                               .text Current Color
                               .div(id = "color")
-                        .player1 
+                        .player1-ingame(hidden)
                           .player-cards(id="player1-cards")
                           .player-icon(id="player-icon")
-                        .player2
+                        .player2--ingame(hidden)
                           .player-cards(id="player2-cards")
                           .player-icon(id="player-icon")
-                        .player3
+                        .player3-ingame(hidden)
                           .player-cards(id="player3-cards")
                           .player-icon(id="player-icon")
-                        .player4
+                        .player4-ingame
                           .player-icon(id="player-icon")
                           .player-cards(id="player4-cards")
     .draw-pile
@@ -80,5 +80,17 @@ block content
       .select-yellow
 
 block footer
+  script.
+    window.onload = function(){
+      let i;
+      for(i = 0; i < seat; i++){
+        document.getElementsByClassName(`player${4-i}-ingame`).classList.remove("hidden");
+      }
+      let j;
+      for(i = 0; i < required_count; i++){
+        document.getElementsByClassName(`player${4-i}`).classList.remove("hidden");
+      }
+      
+    }
   script(src="/javascripts/games/join.js")
   script(src="/javascripts/game-management.js")

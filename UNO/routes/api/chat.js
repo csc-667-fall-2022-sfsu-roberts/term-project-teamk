@@ -7,6 +7,8 @@ router.post("/:id", (request, response) => {
   const { username } = request.session;
   const timestamp = Date.now();
 
+  console.log("infor: "  + id + ", " + message + ", " + username + ", " + timestamp)
+
   request.app.io.emit(`chat:${id}`, {
     sender: username,
     message,

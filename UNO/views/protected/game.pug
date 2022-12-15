@@ -6,11 +6,13 @@ block styles
     link(rel='stylesheet', href='/stylesheets/table.css')
     link(rel='stylesheet', href='/stylesheets/card.css')
     link(rel='stylesheet', href='/stylesheets/cardSize.css')
+
     link(rel='stylesheet', href='/stylesheets/player1hand.css')
     link(rel='stylesheet', href='/stylesheets/player2hand.css')
     link(rel='stylesheet', href='/stylesheets/player3hand.css')
     link(rel='stylesheet', href='/stylesheets/player4hand.css')
-    
+
+    link(rel='stylesheet', href='/stylesheets/chat.css')
 
 block content
   //-h1 Game page #{id} (#{title})
@@ -29,20 +31,20 @@ block content
                               .text Current Color
                               .div(id = "color")
                         .player1
-                          .player-cards(id="player1-cards")
+                          .player-cards
                           .player-icon(id="player-icon")
                             .spinner-border(id="player1-loading")
                         .player2
-                          .player-cards(id="player2-cards")
+                          .player-cards
                           .player-icon(id="player-icon")
                             .spinner-border(id="player2-loading")
                         .player3
-                          .player-cards(id="player3-cards")
+                          .player-cards
                           .player-icon(id="player-icon")
                             .spinner-border(id="player3-loading")
                         .player4
                           .player-icon(id="player-icon") #{username}
-                          .player-cards(id="player4-cards")
+                          .player-cards
   #game-table(class=`${ready ? "" : "hidden"}`)
     .card-body(id="lobby")
                         .center
@@ -79,7 +81,10 @@ block content
       .select-green
       .select-yellow
 
-block footer
+  #debug test:
   
+  //include chat.pug
+
+block footer
+  script(src="/javascripts/chat.js")
   script(src="/javascripts/games/join.js")
-  script(src="/javascripts/game-management.js")
