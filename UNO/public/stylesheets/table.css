@@ -101,7 +101,15 @@
     width: 50px;
     min-height: 50px;
     min-width: 50px;
-    background-color: none;
+    background-color: blue;
+}
+
+.currentColor .ingame #color{
+    height: 50px;
+    width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    background-color: blue;
 }
 
 .center .pile #cardpile1{

@@ -157,7 +157,9 @@ fetch(window.location.pathname, { method: "post" })
   .then(({ game_id }) => {
     socket.on(`game:${game_id}:player-joined`, ({ count, required_count }) => {
       document.querySelector("span.current-count").innerHTML = `waiting for players ${count} of ${required_count}`;
+      
       //full, ready for start game
+
       if (count === required_count) {
         document.querySelector("#waiting").classList.add("hidden");
         document.querySelector("#game-table").classList.remove("hidden");
