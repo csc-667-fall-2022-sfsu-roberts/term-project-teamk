@@ -3,6 +3,7 @@ extends layout
 block styles
     link(rel='stylesheet', href='/stylesheets/chat.css')
     link(rel='stylesheet', href='/stylesheets/index.css')
+    link()
 
 block content
 
@@ -39,21 +40,29 @@ block content
     //-                             button.btn.bg-success(id="chatbox-btn" type="submit")
     //-                                 i.fa.fa-paper-plane
 
-    .enter(id="create-game")
-      .input-area
-        form(action="/games/create" method="post")
-          label(for="title") Enter Game Title to Create
-          br
-          input#title(type="text" name="title")
-          br
-          button.btn.btn-primary(id='create-game-button' type=submit) Create A New Game
+    div.container
+      div.row.mt-5(id="create-game")
+          div.col-sm-12.col-md-6.offset-md-3
+            div.card
+              div.card-body
+                form(id="login-form" action="/games/create" method="post")
+                  div.form-group
+                    label(for="usernameInput" fontcolor="white") New Game title
+                    input#title(type="text" name="title")
+                    br
+                    button.btn.btn-primary(id='create-game-button' type=submit) Create A New Game
 
-    .enter(id="join-game")
-      each game in games.joinable
-        li
-          span= game.title
-          form(action=`/games/${game.id}/join` method="post" target="_blank")
-            button Join game
+    
+      div.row.mt-5(id="join-game")
+          div.col-sm-12.col-md-6.offset-md-3
+            div.card
+              div.card-body
+                each game in games.joinable
+                  li
+                    span= game.title
+                    form(action=`/games/${game.id}/join` method="post" target="_blank")
+                      button.btn.btn-primary(id='create-game-button' type=submit) Join game
+        
       //-.input-text enter room name(join)
       //-.input-area
         form(action=`/games/join` method="post" target="_blank")
