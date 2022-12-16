@@ -9,6 +9,6 @@ To run the server, run the following command:
 # Render - https://teamk.onrender.com
 
 # Home Page
-
 ![Home Page](Home.png)
+
 
