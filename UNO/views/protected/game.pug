@@ -6,48 +6,79 @@ block styles
     link(rel='stylesheet', href='/stylesheets/table.css')
     link(rel='stylesheet', href='/stylesheets/card.css')
     link(rel='stylesheet', href='/stylesheets/cardSize.css')
+    link(rel='stylesheet', href='/stylesheets/player1hand.css')
+    link(rel='stylesheet', href='/stylesheets/player2hand.css')
+    link(rel='stylesheet', href='/stylesheets/player3hand.css')
+    link(rel='stylesheet', href='/stylesheets/player4hand.css')
+    
 
 block content
   //-h1 Game page #{id} (#{title})
 
   //-#waiting(class=`${ready ? "hidden" : ""}`) Waiting on users 
-  .container-fluid.d-flex.flex-column.h-100
-            .row.flex-fill.d-flex.flex-row
-              .game-container.col(id="parent")
-                .row.p-5(id="parent")
-                  //- Lobby Status Section
-                  .col-sm-12.col-md-9(id="parent")
-                    .card.bg-dark.text-white(id="parent")
-                      .card-body(id="lobby")
+
+  #waiting(class=`${ready ? "hidden" : ""}`)
+    .card-body(id="lobby")
                         .center
                           .pile
-                            
                           .last-played
-                          
                           .game-state
-                            .state waiting for players (#[span.current-count #{count}] of #[span.required-count #{required_count}])
+                            .state(id = "game-state-text") waiting for players (#[span.current-count #{count}]) of (#[span.current-count #{required_count}])
+                            //-waiting for players (#[span.current-count #{count}] of #[span.required-count #{required_count}])
                             .currentColor
                               .text Current Color
                               .div(id = "color")
                         .player1 
                           .player-cards(id="player1-cards")
                           .player-icon(id="player-icon")
-                            .spinner-border(id="loading")
+                            .spinner-border(id="player1-loading")
                         .player2
                           .player-cards(id="player2-cards")
                           .player-icon(id="player-icon")
-                            .spinner-border(id="loading")
+                            .spinner-border(id="player2-loading")
                         .player3
                           .player-cards(id="player3-cards")
                           .player-icon(id="player-icon")
-                            .spinner-border(id="loading")
+                            .spinner-border(id="player3-loading")
+                        .player4
+                          .player-icon(id="player-icon") #{username}
+                          .player-cards(id="player4-cards")
+  #game-table(class=`${ready ? "" : "hidden"}`)
+    .card-body(id="lobby")
+                        .center
+                          .pile
+                            .card-back(id="cardpile1")
+                            .card-back(id="cardpile2")
+                            .card-back(id="cardpile3")
+                            .card-back(id="cardpile4")
+                          .last-played
+                          .game-state
+                            .state player4's turn 
+                            .currentColor
+                              .text Current Color
+                              .div(id = "color")
+                        .player1 
+                          .player-cards(id="player1-cards")
+                          .player-icon(id="player-icon")
+                        .player2
+                          .player-cards(id="player2-cards")
+                          .player-icon(id="player-icon")
+                        .player3
+                          .player-cards(id="player3-cards")
+                          .player-icon(id="player-icon")
                         .player4
                           .player-icon(id="player-icon")
                           .player-cards(id="player4-cards")
-  #game-table(class=`${ready ? "" : "hidden"}`)
     .draw-pile
       .card.special
     #discard
 
+  .select-color
+      .select-red
+      .select-blue
+      .select-green
+      .select-yellow
+
 block footer
   script(src="/javascripts/games/join.js")
+  script(src="/javascripts/game-management.js")
