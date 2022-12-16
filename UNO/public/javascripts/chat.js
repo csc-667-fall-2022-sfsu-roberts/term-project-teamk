@@ -1,13 +1,13 @@
-function expandTextarea(id) {
+const expandTextarea = ((id) => {
   document.getElementById(id).addEventListener('keyup', function () {
     this.style.overflow = 'hidden';
     this.style.height = 0;
     this.style.height = this.scrollHeight + 'px';
   }, false);
-}
+})
 
 
-function sendMessage(message) {
+const sendMessage = ((message) => {
 
   fetch("/chat/0", {
     method: "post",
@@ -19,9 +19,9 @@ function sendMessage(message) {
     })
     .catch((error) => console.log(error));
 
-}
+});
 
-function fetchMessage() {
+const fetchMessage = (() => {
   let message = ""
   document.querySelector("#message").addEventListener("keydown", (event) => {
     console.log(event);
@@ -72,7 +72,7 @@ function fetchMessage() {
 
     //document.querySelector("#debug").innerHTML += ` created,`;
   });
-}
+});
 
 fetchMessage()
 expandTextarea('message');
