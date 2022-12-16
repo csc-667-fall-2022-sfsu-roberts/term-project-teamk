@@ -7,6 +7,7 @@
 const app = require('../app');
 const debug = require('debug')('uno:server');
 const http = require('http');
+const socketInit = require("../sockets/initialization");
 
 /**
  * Get port from environment and store in Express.
@@ -20,12 +21,7 @@ app.set('port', port);
  */
 
 const server = http.createServer(app);
-const io = require('socket.io')(server);
-
-io.on('connection',socket => {
-  console.log("socket connection... ");
-})
-
+socketInit(server, app);
 /**
  * Listen on provided port, on all network interfaces.
  */

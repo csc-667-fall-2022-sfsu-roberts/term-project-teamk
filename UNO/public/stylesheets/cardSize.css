@@ -44,6 +44,11 @@
     background-position: 0px 0px;
   }
   .uno-card-red-1 {
+    height: auto;
+    background-size: calc(14 * var(--card-max-width)) calc(8 * var(--card-max-height));
+    background-image: url("../images/cards.png");
+    background-repeat: no-repeat;
+    min-height: 100%;
     background-position: calc(-1 * var(--card-max-width)) 0px;
   }
   .uno-card-red-2 {

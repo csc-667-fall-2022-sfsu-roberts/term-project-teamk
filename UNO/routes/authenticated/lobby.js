@@ -1,14 +1,19 @@
-const { response } = require("express");
 const express = require("express");
+const Games = require("../../db/games");
+
 const router = express.Router();
 
+router.get("/", (request, response) => {
+  const { username, userId } = request.session;
 
-router.get("/",(request, response) =>{
-    const {sessionID} = request;
-    const { username } = request.session;
-
-    console.log({username});
-    response.render("authenticated/lobby", { username, sessionID });
+  Games.all(userId)
+    .then((games) => {
+      response.render("protected/lobby", { username, userId, games });
+    })
+    .catch((error) => {
+      console.log(error);
+      response.redirect("error");
+    });
 });
 
-module.exports =router;
+module.exports = router;

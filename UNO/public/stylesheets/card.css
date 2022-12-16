@@ -1,275 +1,560 @@
 .card-R0 {
-	position:absolute;
-	clip:rect(0px 172px 260px 0px)
+	background-image: url("../images/cards.png");
+	background-position: 0px 0px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-R1 {
-	position:absolute;
-	clip:rect(0px 374px 260px 200px)
+	background-image: url("../images/cards.png");
+	background-position: -200px 0px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-R2 {
-	position:absolute;
-	clip:rect(0px 576px 260px 400px)
+	background-image: url("../images/cards.png");
+	background-position: -400px 0px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-R3 {
-	position:absolute;
-	clip:rect(0px 778px 260px 600px)
+	background-image: url("../images/cards.png");
+	background-position: -600px 0px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-R4 {
-	position:absolute;
-	clip:rect(0px 980px 260px 800px)
+	background-image: url("../images/cards.png");
+	background-position: -800px 0px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-R5 {
-	position:absolute;
-	clip:rect(0px 1182px 260px 1000px)
+	background-image: url("../images/cards.png");
+	background-position: -1000px 0px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-R6 {
-	position:absolute;
-	clip:rect(0px 1384px 260px 1200px)
+	background-image: url("../images/cards.png");
+	background-position: -1200px 0px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-R7 {
-	position:absolute;
-	clip:rect(0px 1586px 260px 1400px)
+	background-image: url("../images/cards.png");
+	background-position: -1400px 0px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-R8 {
-	position:absolute;
-	clip:rect(0px 1788px 260px 1600px)
+	background-image: url("../images/cards.png");
+	background-position: -1600px 0px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-R9 {
-	position:absolute;
-	clip:rect(0px 1990px 260px 1800px)
+	background-image: url("../images/cards.png");
+	background-position: -1800px 0px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-R10 {
-	position:absolute;
-	clip:rect(0px 2192px 260px 2000px)
+	background-image: url("../images/cards.png");
+	background-position: -2000px 0px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-R11 {
-	position:absolute;
-	clip:rect(0px 2394px 260px 2200px)
+	background-image: url("../images/cards.png");
+	background-position: -2200px 0px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-R12 {
-	position:absolute;
-	clip:rect(0px 2596px 260px 2400px)
+	background-image: url("../images/cards.png");
+	background-position: -2400px 0px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-B0 {
-	position:absolute;
-	clip:rect(280px 172px 545px 0px)
+	background-image: url("../images/cards.png");
+	background-position: 0px -285px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-B1 {
-	position:absolute;
-	clip:rect(280px 374px 545px 200px)
+	background-image: url("../images/cards.png");
+	background-position: -200px -285px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-B2 {
-	position:absolute;
-	clip:rect(280px 576px 545px 400px)
+	background-image: url("../images/cards.png");
+	background-position: -400px -285px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-B3 {
-	position:absolute;
-	clip:rect(280px 778px 545px 600px)
+	background-image: url("../images/cards.png");
+	background-position: -600px -285px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-B4 {
-	position:absolute;
-	clip:rect(280px 980px 545px 800px)
+	background-image: url("../images/cards.png");
+	background-position: -800px -285px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-B5 {
-	position:absolute;
-	clip:rect(280px 1182px 545px 1000px)
+	background-image: url("../images/cards.png");
+	background-position: -1000px -285px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-B6 {
-	position:absolute;
-	clip:rect(280px 1384px 545px 1200px)
+	background-image: url("../images/cards.png");
+	background-position: -1200px -285px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-B7 {
-	position:absolute;
-	clip:rect(280px 1586px 545px 1400px)
+	background-image: url("../images/cards.png");
+	background-position: -1400px -285px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-B8 {
-	position:absolute;
-	clip:rect(280px 1788px 545px 1600px)
+	background-image: url("../images/cards.png");
+	background-position: -1600px -285px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-B9 {
-	position:absolute;
-	clip:rect(280px 1990px 545px 1800px)
+	background-image: url("../images/cards.png");
+	background-position: -1800px -285px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-B10 {
-	position:absolute;
-	clip:rect(280px 2192px 545px 2000px)
+	background-image: url("../images/cards.png");
+	background-position: -2000px -285px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-B11 {
-	position:absolute;
-	clip:rect(280px 2394px 545px 2200px)
+	background-image: url("../images/cards.png");
+	background-position: -2200px -285px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-B12 {
-	position:absolute;
-	clip:rect(280px 2596px 545px 2400px)
+	background-image: url("../images/cards.png");
+	background-position: -2400px -285px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-Y0 {
-	position:absolute;
-	clip:rect(560px 172px 830px 0px)
+	background-image: url("../images/cards.png");
+	background-position: 0px -570px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-Y1 {
-	position:absolute;
-	clip:rect(560px 374px 830px 200px)
+	background-image: url("../images/cards.png");
+	background-position: -200px -570px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-Y2 {
-	position:absolute;
-	clip:rect(560px 576px 830px 400px)
+	background-image: url("../images/cards.png");
+	background-position: -400px -570px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-Y3 {
-	position:absolute;
-	clip:rect(560px 778px 830px 600px)
+	background-image: url("../images/cards.png");
+	background-position: -600px -570px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-Y4 {
-	position:absolute;
-	clip:rect(560px 980px 830px 800px)
+	background-image: url("../images/cards.png");
+	background-position: -800px -570px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-Y5 {
-	position:absolute;
-	clip:rect(560px 1182px 830px 1000px)
+	background-image: url("../images/cards.png");
+	background-position: -1000px -570px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-Y6 {
-	position:absolute;
-	clip:rect(560px 1384px 830px 1200px)
+	background-image: url("../images/cards.png");
+	background-position: -1200px -570px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-Y7 {
-	position:absolute;
-	clip:rect(560px 1586px 830px 1400px)
+	background-image: url("../images/cards.png");
+	background-position: -1400px -570px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-Y8 {
-	position:absolute;
-	clip:rect(560px 1788px 830px 1600px)
+	background-image: url("../images/cards.png");
+	background-position: -1600px -570px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-Y9 {
-	position:absolute;
-	clip:rect(560px 1990px 830px 1800px)
+	background-image: url("../images/cards.png");
+	background-position: -1800px -570px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-Y10 {
-	position:absolute;
-	clip:rect(560px 2192px 830px 2000px)
+	background-image: url("../images/cards.png");
+	background-position: -2000px -570px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-Y11 {
-	position:absolute;
-	clip:rect(560px 2394px 830px 2200px)
+	background-image: url("../images/cards.png");
+	background-position: -2200px -570px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-Y12 {
-	position:absolute;
-	clip:rect(560px 2596px 830px 2400px)
+	background-image: url("../images/cards.png");
+	background-position: -2400px -570px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-G0 {
-	position:absolute;
-	clip:rect(840px 172px 1115px 0px)
+	background-image: url("../images/cards.png");
+	background-position: 0px -855px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-G1 {
-	position:absolute;
-	clip:rect(840px 374px 1115px 200px)
+	background-image: url("../images/cards.png");
+	background-position: -200px -855px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-G2 {
-	position:absolute;
-	clip:rect(840px 576px 1115px 400px)
+	background-image: url("../images/cards.png");
+	background-position: -400px -855px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-G3 {
-	position:absolute;
-	clip:rect(840px 778px 1115px 600px)
+	background-image: url("../images/cards.png");
+	background-position: -600px -855px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-G4 {
-	position:absolute;
-	clip:rect(840px 980px 1115px 800px)
+	background-image: url("../images/cards.png");
+	background-position: -800px -855px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-G5 {
-	position:absolute;
-	clip:rect(840px 1182px 1115px 1000px)
+	background-image: url("../images/cards.png");
+	background-position: -1000px -855px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-G6 {
-	position:absolute;
-	clip:rect(840px 1384px 1115px 1200px)
+	background-image: url("../images/cards.png");
+	background-position: -1200px -855px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-G7 {
-	position:absolute;
-	clip:rect(840px 1586px 1115px 1400px)
+	background-image: url("../images/cards.png");
+	background-position: -1400px -855px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-G8 {
-	position:absolute;
-	clip:rect(840px 1788px 1115px 1600px)
+	background-image: url("../images/cards.png");
+	background-position: -1600px -855px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-G9 {
-	position:absolute;
-	clip:rect(840px 1990px 1115px 1800px)
+	background-image: url("../images/cards.png");
+	background-position: -1800px -855px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-G10 {
-	position:absolute;
-	clip:rect(840px 2192px 1115px 2000px)
+	background-image: url("../images/cards.png");
+	background-position: -2000px -855px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-G11 {
-	position:absolute;
-	clip:rect(840px 2394px 1115px 2200px)
+	background-image: url("../images/cards.png");
+	background-position: -2200px -855px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-G12 {
-	position:absolute;
-	clip:rect(840px 2596px 1115px 2400px)
+	background-image: url("../images/cards.png");
+	background-position: -2400px -855px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-D0 {
-	position:absolute;
-	clip:rect(1120px 172px 1400px 0px)
+	background-image: url("../images/cards.png");
+	background-position: 0px -1140px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-D1 {
-	position:absolute;
-	clip:rect(1120px 374px 1400px 200px)
+	background-image: url("../images/cards.png");
+	background-position: -200px -1140px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }
 
 .card-D2 {
-	position:absolute;
-	clip:rect(1120px 576px 1400px 400px)
-    
+	background-image: url("../images/cards.png");
+	background-position: -400px -1140px;
+	background-size:auto;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
+}
+
+.card-back{
+	background-image: url("../images/card-back.png");
+	background-position: 0px 0px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	max-width: 172px;
+	min-width: 172px;
+	max-height: 256px;
+	min-height: 256px;
 }

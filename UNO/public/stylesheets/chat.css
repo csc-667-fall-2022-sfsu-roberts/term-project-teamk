@@ -120,9 +120,17 @@
     flex-grow: 0.05;
     /* border-top: 2px solid grey; */
   }
+
+  #message{
+    width: 80%;
+  }
   
   .form-control {
     margin: 0;
+  }
+
+  #messageSend{
+    margin-top: 0;
   }
   
   .btn.bg-success {
@@ -131,8 +139,14 @@
   
   #chatroom{
     opacity: 50%;
+ 
+    bottom: 10px;
+    left: 3.5%;
+    position: absolute;
   }
 
   #chatroom:hover{
     opacity: 100%;
   }
+
+  

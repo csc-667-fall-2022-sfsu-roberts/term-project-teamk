@@ -1,0 +1,96 @@
+extends layout
+
+block styles
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/game_room.css')
+    link(rel='stylesheet', href='/stylesheets/table.css')
+    link(rel='stylesheet', href='/stylesheets/card.css')
+    link(rel='stylesheet', href='/stylesheets/cardSize.css')
+    link(rel='stylesheet', href='/stylesheets/player1hand.css')
+    link(rel='stylesheet', href='/stylesheets/player2hand.css')
+    link(rel='stylesheet', href='/stylesheets/player3hand.css')
+    link(rel='stylesheet', href='/stylesheets/player4hand.css')
+    
+
+block content
+  //-h1 Game page #{id} (#{title})
+
+  //-#waiting(class=`${ready ? "hidden" : ""}`) Waiting on users 
+
+  #waiting(class=`${ready ? "hidden" : ""}`)
+    .card-body(id="lobby")
+                        .center
+                          .pile
+                          .last-played
+                          .game-state
+                            .state(id = "game-state-text") (#[span.current-count #{count}])
+                            //-waiting for players (#[span.current-count #{count}] of #[span.required-count #{required_count}])
+                            .currentColor
+                              .text Current Color
+                              .div(id = "color")
+                        .player1(hidden)
+                          .player-cards(id="player1-cards")
+                          .player-icon(id="player-icon")
+                            .spinner-border(id="player1-loading")
+                        .player2(hidden)
+                          .player-cards(id="player2-cards")
+                          .player-icon(id="player-icon")
+                            .spinner-border(id="player2-loading")
+                        .player3(hidden)
+                          .player-cards(id="player3-cards")
+                          .player-icon(id="player-icon")
+                            .spinner-border(id="player3-loading")
+                        .player4
+                          .player-icon(id="player-icon") #{username}
+                          .player-cards(id="player4-cards")
+  #game-table(class=`${ready ? "" : "hidden"}`)
+    .card-body(id="lobby")
+                        .center
+                          .pile
+                            .card-back(id="cardpile1")
+                            .card-back(id="cardpile2")
+                            .card-back(id="cardpile3")
+                            .card-back(id="cardpile4")
+                          .last-played
+                          .game-state
+                            .state player4's turn 
+                            .currentColor
+                              .text Current Color
+                              .div(id = "color")
+                        .player1-ingame(hidden)
+                          .player-cards(id="player1-cards")
+                          .player-icon(id="player-icon")
+                        .player2--ingame(hidden)
+                          .player-cards(id="player2-cards")
+                          .player-icon(id="player-icon")
+                        .player3-ingame(hidden)
+                          .player-cards(id="player3-cards")
+                          .player-icon(id="player-icon")
+                        .player4-ingame
+                          .player-icon(id="player-icon")
+                          .player-cards(id="player4-cards")
+    .draw-pile
+      .card.special
+    #discard
+
+  .select-color
+      .select-red
+      .select-blue
+      .select-green
+      .select-yellow
+
+block footer
+  script.
+    window.onload = function(){
+      let i;
+      for(i = 0; i < seat; i++){
+        document.getElementsByClassName(`player${4-i}-ingame`).classList.remove("hidden");
+      }
+      let j;
+      for(i = 0; i < required_count; i++){
+        document.getElementsByClassName(`player${4-i}`).classList.remove("hidden");
+      }
+      
+    }
+  script(src="/javascripts/games/join.js")
+  script(src="/javascripts/game-management.js")
